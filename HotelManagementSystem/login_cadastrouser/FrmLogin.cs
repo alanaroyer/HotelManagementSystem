@@ -7,15 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HotelManagementSystem.login_cadastrouser;
 using MySql.Data.MySqlClient;
 
 namespace HotelManagementSystem
 {
     public partial class FrmLogin : Form
     {
-        ////////////////////////// ------ Chamar Banco de Dados ------ /////////////////////////////
-        private string connectionString = "SERVER=localhost;DATABASE=hoteldb;UID=root;PWD=senac";
-        
 
         public FrmLogin()
         {
@@ -23,11 +21,7 @@ namespace HotelManagementSystem
         }
 
         //////////// ------ Código do Link clicavel que direciona para a tela de cadastros ------ ////////////
-        private void LinkTxtCriarconta_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            FrmCadastro frmcadastro = new FrmCadastro();
-            frmcadastro.show();
-        }
+
 
         ///////////////////// ------ Código para fechar a tela ------ ///////////////////////////
         private void BtnSair_Click(object sender, EventArgs e)
@@ -54,13 +48,12 @@ namespace HotelManagementSystem
             string nomeUsuario = textBoxNomeUsuario.Text;
             string senha = textBoxSenha.Text;
 
-            // Criptografar a senha (usando SHA-256)
-            string senhaCriptografada = Convert.ToBase64String(
-                new System.Security.Cryptography.SHA256Managed().ComputeHash(System.Text.Encoding.UTF8.GetBytes(senha))
-            );
 
-           
         }
 
+        private void LinkTxtCriarconta_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+        }
     }
 }

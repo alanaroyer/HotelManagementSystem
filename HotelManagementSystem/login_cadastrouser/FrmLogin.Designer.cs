@@ -55,7 +55,7 @@
             PaneltopoLogin.Location = new Point(0, 0);
             PaneltopoLogin.Margin = new Padding(4, 3, 4, 3);
             PaneltopoLogin.Name = "PaneltopoLogin";
-            PaneltopoLogin.Size = new Size(1200, 95);
+            PaneltopoLogin.Size = new Size(1920, 95);
             PaneltopoLogin.TabIndex = 1;
             // 
             // BtnSair
@@ -68,10 +68,10 @@
             BtnSair.FlatStyle = FlatStyle.Flat;
             BtnSair.Font = new Font("Nirmala UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnSair.ForeColor = Color.White;
-            BtnSair.Location = new Point(1115, 0);
+            BtnSair.Location = new Point(1783, 0);
             BtnSair.Margin = new Padding(4, 3, 4, 3);
             BtnSair.Name = "BtnSair";
-            BtnSair.Size = new Size(85, 95);
+            BtnSair.Size = new Size(137, 95);
             BtnSair.TabIndex = 5;
             BtnSair.UseVisualStyleBackColor = true;
             BtnSair.Click += BtnSair_Click;
@@ -92,7 +92,7 @@
             PanellateralLogin.Location = new Point(0, 95);
             PanellateralLogin.Margin = new Padding(4, 3, 4, 3);
             PanellateralLogin.Name = "PanellateralLogin";
-            PanellateralLogin.Size = new Size(450, 705);
+            PanellateralLogin.Size = new Size(450, 878);
             PanellateralLogin.TabIndex = 2;
             // 
             // BtnLogin
@@ -104,7 +104,7 @@
             BtnLogin.FlatStyle = FlatStyle.Flat;
             BtnLogin.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnLogin.ForeColor = Color.White;
-            BtnLogin.Location = new Point(105, 417);
+            BtnLogin.Location = new Point(112, 470);
             BtnLogin.Margin = new Padding(4, 3, 4, 3);
             BtnLogin.Name = "BtnLogin";
             BtnLogin.Size = new Size(245, 60);
@@ -119,7 +119,7 @@
             CheckbxShowPas.Cursor = Cursors.Hand;
             CheckbxShowPas.FlatStyle = FlatStyle.Flat;
             CheckbxShowPas.Font = new Font("Nirmala UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            CheckbxShowPas.Location = new Point(100, 335);
+            CheckbxShowPas.Location = new Point(100, 370);
             CheckbxShowPas.Margin = new Padding(4, 3, 4, 3);
             CheckbxShowPas.Name = "CheckbxShowPas";
             CheckbxShowPas.Size = new Size(108, 17);
@@ -135,7 +135,7 @@
             textBoxSenha.Cursor = Cursors.IBeam;
             textBoxSenha.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBoxSenha.ForeColor = SystemColors.WindowText;
-            textBoxSenha.Location = new Point(100, 294);
+            textBoxSenha.Location = new Point(90, 224);
             textBoxSenha.Margin = new Padding(4, 3, 4, 3);
             textBoxSenha.Multiline = true;
             textBoxSenha.Name = "textBoxSenha";
@@ -151,7 +151,7 @@
             textBoxNomeUsuario.Cursor = Cursors.IBeam;
             textBoxNomeUsuario.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBoxNomeUsuario.ForeColor = SystemColors.WindowText;
-            textBoxNomeUsuario.Location = new Point(102, 209);
+            textBoxNomeUsuario.Location = new Point(102, 331);
             textBoxNomeUsuario.Margin = new Padding(4, 3, 4, 3);
             textBoxNomeUsuario.Multiline = true;
             textBoxNomeUsuario.Name = "textBoxNomeUsuario";
@@ -164,7 +164,7 @@
             TextSenha.BackColor = SystemColors.Menu;
             TextSenha.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             TextSenha.ForeColor = Color.Black;
-            TextSenha.Location = new Point(100, 271);
+            TextSenha.Location = new Point(100, 306);
             TextSenha.Margin = new Padding(4, 0, 4, 0);
             TextSenha.Name = "TextSenha";
             TextSenha.Size = new Size(64, 21);
@@ -177,7 +177,7 @@
             TxtUsuario.BackColor = SystemColors.Menu;
             TxtUsuario.Font = new Font("Nirmala UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             TxtUsuario.ForeColor = Color.Black;
-            TxtUsuario.Location = new Point(102, 186);
+            TxtUsuario.Location = new Point(92, 200);
             TxtUsuario.Margin = new Padding(4, 0, 4, 0);
             TxtUsuario.Name = "TxtUsuario";
             TxtUsuario.Size = new Size(159, 21);
@@ -192,7 +192,7 @@
             LinkTxtCriarconta.Font = new Font("Nirmala UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LinkTxtCriarconta.ForeColor = Color.DarkSlateGray;
             LinkTxtCriarconta.LinkColor = Color.FromArgb(4, 99, 125);
-            LinkTxtCriarconta.Location = new Point(168, 582);
+            LinkTxtCriarconta.Location = new Point(164, 692);
             LinkTxtCriarconta.Margin = new Padding(4, 0, 4, 0);
             LinkTxtCriarconta.Name = "LinkTxtCriarconta";
             LinkTxtCriarconta.Size = new Size(103, 21);
@@ -206,7 +206,7 @@
             // 
             TextNaoeusuario.AutoSize = true;
             TextNaoeusuario.Font = new Font("Nirmala UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TextNaoeusuario.Location = new Point(104, 561);
+            TextNaoeusuario.Location = new Point(100, 671);
             TextNaoeusuario.Margin = new Padding(4, 0, 4, 0);
             TextNaoeusuario.Name = "TextNaoeusuario";
             TextNaoeusuario.Size = new Size(245, 21);
@@ -229,9 +229,9 @@
             // 
             pictureBoxprincipal.BackgroundImage = (Image)resources.GetObject("pictureBoxprincipal.BackgroundImage");
             pictureBoxprincipal.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBoxprincipal.Location = new Point(449, 95);
+            pictureBoxprincipal.Location = new Point(441, 95);
             pictureBoxprincipal.Name = "pictureBoxprincipal";
-            pictureBoxprincipal.Size = new Size(751, 705);
+            pictureBoxprincipal.Size = new Size(839, 865);
             pictureBoxprincipal.TabIndex = 7;
             pictureBoxprincipal.TabStop = false;
             // 
@@ -239,7 +239,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1200, 800);
+            ClientSize = new Size(1920, 973);
             Controls.Add(pictureBoxprincipal);
             Controls.Add(PanellateralLogin);
             Controls.Add(PaneltopoLogin);
@@ -247,8 +247,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
             Name = "FrmLogin";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            StartPosition = FormStartPosition.Manual;
             PaneltopoLogin.ResumeLayout(false);
             PanellateralLogin.ResumeLayout(false);
             PanellateralLogin.PerformLayout();

@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             PaneltopoLogin = new Panel();
             BtnSair = new Button();
+            panel1 = new Panel();
             PaneltopoLogin.SuspendLayout();
             SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             PaneltopoLogin.Location = new Point(0, 0);
             PaneltopoLogin.Margin = new Padding(4, 3, 4, 3);
             PaneltopoLogin.Name = "PaneltopoLogin";
-            PaneltopoLogin.Size = new Size(1200, 95);
+            PaneltopoLogin.Size = new Size(1200, 60);
             PaneltopoLogin.TabIndex = 2;
             // 
             // BtnSair
@@ -55,19 +56,29 @@
             BtnSair.FlatStyle = FlatStyle.Flat;
             BtnSair.Font = new Font("Nirmala UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnSair.ForeColor = Color.White;
-            BtnSair.Location = new Point(1115, 0);
+            BtnSair.Location = new Point(1140, 0);
             BtnSair.Margin = new Padding(4, 3, 4, 3);
             BtnSair.Name = "BtnSair";
-            BtnSair.Size = new Size(85, 95);
+            BtnSair.Size = new Size(60, 60);
             BtnSair.TabIndex = 5;
             BtnSair.UseVisualStyleBackColor = true;
             BtnSair.Click += BtnSair_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(4, 99, 125);
+            panel1.Dock = DockStyle.Left;
+            panel1.Location = new Point(0, 60);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(200, 740);
+            panel1.TabIndex = 3;
             // 
             // FrmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1200, 800);
+            Controls.Add(panel1);
             Controls.Add(PaneltopoLogin);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmMenu";
@@ -81,5 +92,6 @@
 
         private Panel PaneltopoLogin;
         private Button BtnSair;
+        private Panel panel1;
     }
 }

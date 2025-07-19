@@ -21,5 +21,7 @@ namespace HotelManagementSystem.reservas
         {
             Application.Exit();
         }
+
+        
     }
 }

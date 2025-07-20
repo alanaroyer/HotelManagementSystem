@@ -55,7 +55,7 @@
             PaneltopoLogin.Location = new Point(0, 0);
             PaneltopoLogin.Margin = new Padding(4, 3, 4, 3);
             PaneltopoLogin.Name = "PaneltopoLogin";
-            PaneltopoLogin.Size = new Size(1920, 95);
+            PaneltopoLogin.Size = new Size(1280, 95);
             PaneltopoLogin.TabIndex = 1;
             // 
             // BtnSair
@@ -68,7 +68,7 @@
             BtnSair.FlatStyle = FlatStyle.Flat;
             BtnSair.Font = new Font("Nirmala UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnSair.ForeColor = Color.White;
-            BtnSair.Location = new Point(1783, 0);
+            BtnSair.Location = new Point(1143, 0);
             BtnSair.Margin = new Padding(4, 3, 4, 3);
             BtnSair.Name = "BtnSair";
             BtnSair.Size = new Size(137, 95);
@@ -92,7 +92,7 @@
             PanellateralLogin.Location = new Point(0, 95);
             PanellateralLogin.Margin = new Padding(4, 3, 4, 3);
             PanellateralLogin.Name = "PanellateralLogin";
-            PanellateralLogin.Size = new Size(450, 878);
+            PanellateralLogin.Size = new Size(448, 625);
             PanellateralLogin.TabIndex = 2;
             // 
             // BtnLogin
@@ -135,7 +135,7 @@
             textBoxSenha.Cursor = Cursors.IBeam;
             textBoxSenha.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBoxSenha.ForeColor = SystemColors.WindowText;
-            textBoxSenha.Location = new Point(90, 224);
+            textBoxSenha.Location = new Point(90, 329);
             textBoxSenha.Margin = new Padding(4, 3, 4, 3);
             textBoxSenha.Multiline = true;
             textBoxSenha.Name = "textBoxSenha";
@@ -151,7 +151,7 @@
             textBoxNomeUsuario.Cursor = Cursors.IBeam;
             textBoxNomeUsuario.Font = new Font("Arial", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             textBoxNomeUsuario.ForeColor = SystemColors.WindowText;
-            textBoxNomeUsuario.Location = new Point(102, 331);
+            textBoxNomeUsuario.Location = new Point(90, 224);
             textBoxNomeUsuario.Margin = new Padding(4, 3, 4, 3);
             textBoxNomeUsuario.Multiline = true;
             textBoxNomeUsuario.Name = "textBoxNomeUsuario";
@@ -229,9 +229,9 @@
             // 
             pictureBoxprincipal.BackgroundImage = (Image)resources.GetObject("pictureBoxprincipal.BackgroundImage");
             pictureBoxprincipal.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBoxprincipal.Location = new Point(441, 95);
+            pictureBoxprincipal.Location = new Point(446, 95);
             pictureBoxprincipal.Name = "pictureBoxprincipal";
-            pictureBoxprincipal.Size = new Size(839, 865);
+            pictureBoxprincipal.Size = new Size(834, 625);
             pictureBoxprincipal.TabIndex = 7;
             pictureBoxprincipal.TabStop = false;
             // 
@@ -239,7 +239,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1920, 973);
+            ClientSize = new Size(1280, 720);
             Controls.Add(pictureBoxprincipal);
             Controls.Add(PanellateralLogin);
             Controls.Add(PaneltopoLogin);

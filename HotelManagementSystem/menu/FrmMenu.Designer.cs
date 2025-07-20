@@ -43,7 +43,7 @@
             PaneltopoLogin.Location = new Point(0, 0);
             PaneltopoLogin.Margin = new Padding(4, 3, 4, 3);
             PaneltopoLogin.Name = "PaneltopoLogin";
-            PaneltopoLogin.Size = new Size(1200, 60);
+            PaneltopoLogin.Size = new Size(1920, 60);
             PaneltopoLogin.TabIndex = 2;
             // 
             // BtnSair
@@ -56,7 +56,7 @@
             BtnSair.FlatStyle = FlatStyle.Flat;
             BtnSair.Font = new Font("Nirmala UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnSair.ForeColor = Color.White;
-            BtnSair.Location = new Point(1140, 0);
+            BtnSair.Location = new Point(1860, 0);
             BtnSair.Margin = new Padding(4, 3, 4, 3);
             BtnSair.Name = "BtnSair";
             BtnSair.Size = new Size(60, 60);
@@ -70,19 +70,19 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 60);
             panel1.Name = "panel1";
-            panel1.Size = new Size(200, 740);
+            panel1.Size = new Size(300, 913);
             panel1.TabIndex = 3;
             // 
             // FrmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1200, 800);
+            ClientSize = new Size(1920, 973);
             Controls.Add(panel1);
             Controls.Add(PaneltopoLogin);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmMenu";
-            StartPosition = FormStartPosition.CenterScreen;
+            StartPosition = FormStartPosition.Manual;
             Text = "FrmMenu";
             PaneltopoLogin.ResumeLayout(false);
             ResumeLayout(false);

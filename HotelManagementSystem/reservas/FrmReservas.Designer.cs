@@ -116,8 +116,12 @@
             lblTotal = new Label();
             btnRemove = new Button();
             pnlhospede = new Panel();
-            labeltelefone = new Label();
             txttelefone = new MaskedTextBox();
+            labeltelefone = new Label();
+            labeldatanascimento = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            textBox1 = new TextBox();
+            label1 = new Label();
             Paneltop.SuspendLayout();
             pnlprincipal.SuspendLayout();
             panel29.SuspendLayout();
@@ -166,7 +170,7 @@
             Paneltop.Location = new Point(0, 0);
             Paneltop.Margin = new Padding(4, 3, 4, 3);
             Paneltop.Name = "Paneltop";
-            Paneltop.Size = new Size(1200, 95);
+            Paneltop.Size = new Size(1980, 95);
             Paneltop.TabIndex = 2;
             // 
             // btnconsultar
@@ -178,7 +182,7 @@
             btnconsultar.FlatStyle = FlatStyle.Flat;
             btnconsultar.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnconsultar.ForeColor = Color.FromArgb(4, 99, 125);
-            btnconsultar.Location = new Point(640, 15);
+            btnconsultar.Location = new Point(1018, 12);
             btnconsultar.Margin = new Padding(4, 3, 4, 3);
             btnconsultar.Name = "btnconsultar";
             btnconsultar.Size = new Size(245, 60);
@@ -195,7 +199,7 @@
             Btnreservar.FlatStyle = FlatStyle.Flat;
             Btnreservar.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Btnreservar.ForeColor = Color.FromArgb(4, 99, 125);
-            Btnreservar.Location = new Point(377, 15);
+            Btnreservar.Location = new Point(755, 12);
             Btnreservar.Margin = new Padding(4, 3, 4, 3);
             Btnreservar.Name = "Btnreservar";
             Btnreservar.Size = new Size(245, 60);
@@ -207,12 +211,12 @@
             // 
             txtreservas.AutoSize = true;
             txtreservas.BackColor = SystemColors.ButtonFace;
-            txtreservas.Font = new Font("Nirmala UI", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtreservas.Font = new Font("Nirmala UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtreservas.ForeColor = Color.FromArgb(4, 99, 125);
-            txtreservas.Location = new Point(34, 15);
+            txtreservas.Location = new Point(29, 22);
             txtreservas.Margin = new Padding(4, 0, 4, 0);
             txtreservas.Name = "txtreservas";
-            txtreservas.Size = new Size(224, 65);
+            txtreservas.Size = new Size(172, 50);
             txtreservas.TabIndex = 6;
             txtreservas.Text = "Reservas";
             // 
@@ -226,7 +230,7 @@
             BtnSair.FlatStyle = FlatStyle.Flat;
             BtnSair.Font = new Font("Nirmala UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnSair.ForeColor = Color.White;
-            BtnSair.Location = new Point(1115, 0);
+            BtnSair.Location = new Point(1895, 0);
             BtnSair.Margin = new Padding(4, 3, 4, 3);
             BtnSair.Name = "BtnSair";
             BtnSair.Size = new Size(85, 95);
@@ -306,7 +310,7 @@
             labelvalordiaria.FlatStyle = FlatStyle.Flat;
             labelvalordiaria.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelvalordiaria.ForeColor = SystemColors.ButtonFace;
-            labelvalordiaria.Location = new Point(6, 98);
+            labelvalordiaria.Location = new Point(610, 135);
             labelvalordiaria.Name = "labelvalordiaria";
             labelvalordiaria.Size = new Size(143, 25);
             labelvalordiaria.TabIndex = 13;
@@ -315,7 +319,7 @@
             // tbxvalordiaria
             // 
             tbxvalordiaria.Cursor = Cursors.IBeam;
-            tbxvalordiaria.Location = new Point(151, 99);
+            tbxvalordiaria.Location = new Point(755, 136);
             tbxvalordiaria.Name = "tbxvalordiaria";
             tbxvalordiaria.Size = new Size(100, 23);
             tbxvalordiaria.TabIndex = 14;
@@ -343,7 +347,7 @@
             // 
             // tbxhospede
             // 
-            tbxhospede.Location = new Point(190, 19);
+            tbxhospede.Location = new Point(191, 19);
             tbxhospede.Name = "tbxhospede";
             tbxhospede.Size = new Size(216, 23);
             tbxhospede.TabIndex = 18;
@@ -355,7 +359,7 @@
             labelnomehospede.FlatStyle = FlatStyle.Flat;
             labelnomehospede.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelnomehospede.ForeColor = SystemColors.ButtonFace;
-            labelnomehospede.Location = new Point(9, 18);
+            labelnomehospede.Location = new Point(11, 18);
             labelnomehospede.Name = "labelnomehospede";
             labelnomehospede.Size = new Size(179, 25);
             labelnomehospede.TabIndex = 17;
@@ -368,7 +372,7 @@
             labelfuncionario.FlatStyle = FlatStyle.Flat;
             labelfuncionario.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelfuncionario.ForeColor = SystemColors.ButtonFace;
-            labelfuncionario.Location = new Point(12, 196);
+            labelfuncionario.Location = new Point(461, 171);
             labelfuncionario.Name = "labelfuncionario";
             labelfuncionario.Size = new Size(143, 25);
             labelfuncionario.TabIndex = 19;
@@ -377,7 +381,7 @@
             // cbxfuncionario
             // 
             cbxfuncionario.FormattingEnabled = true;
-            cbxfuncionario.Location = new Point(161, 196);
+            cbxfuncionario.Location = new Point(610, 171);
             cbxfuncionario.Name = "cbxfuncionario";
             cbxfuncionario.Size = new Size(249, 23);
             cbxfuncionario.TabIndex = 22;
@@ -1117,19 +1121,30 @@
             // 
             // pnlhospede
             // 
+            pnlhospede.Controls.Add(textBox1);
+            pnlhospede.Controls.Add(label1);
+            pnlhospede.Controls.Add(dateTimePicker1);
+            pnlhospede.Controls.Add(labeldatanascimento);
             pnlhospede.Controls.Add(txttelefone);
             pnlhospede.Controls.Add(labeltelefone);
             pnlhospede.Controls.Add(tbxhospede);
             pnlhospede.Controls.Add(labelnomehospede);
-            pnlhospede.Controls.Add(cbxfuncionario);
-            pnlhospede.Controls.Add(labelfuncionario);
-            pnlhospede.Controls.Add(tbxvalordiaria);
-            pnlhospede.Controls.Add(labelvalordiaria);
-            pnlhospede.Location = new Point(430, 371);
+            pnlhospede.Location = new Point(390, 243);
             pnlhospede.Name = "pnlhospede";
-            pnlhospede.Size = new Size(539, 235);
+            pnlhospede.Size = new Size(539, 182);
             pnlhospede.TabIndex = 28;
             pnlhospede.Tag = "";
+            // 
+            // txttelefone
+            // 
+            txttelefone.Cursor = Cursors.IBeam;
+            txttelefone.Enabled = false;
+            txttelefone.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txttelefone.Location = new Point(102, 81);
+            txttelefone.Mask = "(99) 00000-0000";
+            txttelefone.Name = "txttelefone";
+            txttelefone.Size = new Size(100, 25);
+            txttelefone.TabIndex = 69;
             // 
             // labeltelefone
             // 
@@ -1138,35 +1153,70 @@
             labeltelefone.FlatStyle = FlatStyle.Flat;
             labeltelefone.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labeltelefone.ForeColor = SystemColors.ButtonFace;
-            labeltelefone.Location = new Point(9, 58);
+            labeltelefone.Location = new Point(13, 81);
             labeltelefone.Name = "labeltelefone";
             labeltelefone.Size = new Size(87, 25);
             labeltelefone.TabIndex = 23;
             labeltelefone.Text = "Telefone";
             // 
-            // txttelefone
+            // labeldatanascimento
             // 
-            txttelefone.Cursor = Cursors.IBeam;
-            txttelefone.Enabled = false;
-            txttelefone.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txttelefone.Location = new Point(98, 58);
-            txttelefone.Mask = "(99) 00000-0000";
-            txttelefone.Name = "txttelefone";
-            txttelefone.Size = new Size(100, 25);
-            txttelefone.TabIndex = 69;
+            labeldatanascimento.AutoSize = true;
+            labeldatanascimento.BackColor = Color.FromArgb(118, 177, 206);
+            labeldatanascimento.FlatStyle = FlatStyle.Flat;
+            labeldatanascimento.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labeldatanascimento.ForeColor = SystemColors.ButtonFace;
+            labeldatanascimento.Location = new Point(12, 119);
+            labeldatanascimento.Name = "labeldatanascimento";
+            labeldatanascimento.Size = new Size(190, 25);
+            labeldatanascimento.TabIndex = 70;
+            labeldatanascimento.Text = "Data de Nascimento";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Location = new Point(204, 120);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(82, 23);
+            dateTimePicker1.TabIndex = 71;
+            dateTimePicker1.Value = new DateTime(2025, 7, 20, 15, 27, 19, 0);
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(148, 156);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(216, 23);
+            textBox1.TabIndex = 73;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(118, 177, 206);
+            label1.FlatStyle = FlatStyle.Flat;
+            label1.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(12, 155);
+            label1.Name = "label1";
+            label1.Size = new Size(135, 25);
+            label1.TabIndex = 72;
+            label1.Text = "N° Identidade";
             // 
             // FrmReservas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
-            ClientSize = new Size(1200, 800);
+            ClientSize = new Size(1980, 973);
             Controls.Add(pnlhospede);
             Controls.Add(btnRemove);
             Controls.Add(lblTotal);
             Controls.Add(labeltotal);
             Controls.Add(dataGridView1);
             Controls.Add(pnlprincipal);
+            Controls.Add(cbxfuncionario);
+            Controls.Add(labelfuncionario);
+            Controls.Add(tbxvalordiaria);
+            Controls.Add(labelvalordiaria);
             Controls.Add(tbxdias);
             Controls.Add(labeldias);
             Controls.Add(cbano);
@@ -1180,6 +1230,7 @@
             Name = "FrmReservas";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmReservas";
+            Load += FrmReservas_Load;
             Paneltop.ResumeLayout(false);
             Paneltop.PerformLayout();
             pnlprincipal.ResumeLayout(false);
@@ -1343,5 +1394,9 @@
         private Panel pnlhospede;
         private Label labeltelefone;
         private MaskedTextBox txttelefone;
+        private DateTimePicker dateTimePicker1;
+        private Label labeldatanascimento;
+        private TextBox textBox1;
+        private Label label1;
     }
 }

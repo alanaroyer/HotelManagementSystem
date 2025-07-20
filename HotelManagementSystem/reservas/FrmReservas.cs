@@ -22,6 +22,9 @@ namespace HotelManagementSystem.reservas
             Application.Exit();
         }
 
-        
+        private void FrmReservas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

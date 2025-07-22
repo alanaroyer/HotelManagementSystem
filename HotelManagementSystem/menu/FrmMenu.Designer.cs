@@ -43,7 +43,7 @@
             PaneltopoLogin.Location = new Point(0, 0);
             PaneltopoLogin.Margin = new Padding(4, 3, 4, 3);
             PaneltopoLogin.Name = "PaneltopoLogin";
-            PaneltopoLogin.Size = new Size(1920, 69);
+            PaneltopoLogin.Size = new Size(1920, 60);
             PaneltopoLogin.TabIndex = 2;
             // 
             // BtnSair
@@ -59,7 +59,7 @@
             BtnSair.Location = new Point(1860, 0);
             BtnSair.Margin = new Padding(4, 3, 4, 3);
             BtnSair.Name = "BtnSair";
-            BtnSair.Size = new Size(60, 69);
+            BtnSair.Size = new Size(60, 60);
             BtnSair.TabIndex = 5;
             BtnSair.UseVisualStyleBackColor = true;
             BtnSair.Click += BtnSair_Click;
@@ -68,22 +68,22 @@
             // 
             panel1.BackColor = Color.FromArgb(4, 99, 125);
             panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 69);
+            panel1.Location = new Point(0, 60);
             panel1.Name = "panel1";
-            panel1.Size = new Size(300, 865);
+            panel1.Size = new Size(300, 913);
             panel1.TabIndex = 3;
             // 
             // FrmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoValidate = AutoValidate.EnableAllowFocusChange;
-            BackgroundImageLayout = ImageLayout.None;
-            ClientSize = new Size(1920, 934);
+            ClientSize = new Size(1920, 973);
             Controls.Add(panel1);
             Controls.Add(PaneltopoLogin);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmMenu";
+            StartPosition = FormStartPosition.Manual;
+            Text = "FrmMenu";
             PaneltopoLogin.ResumeLayout(false);
             ResumeLayout(false);
         }

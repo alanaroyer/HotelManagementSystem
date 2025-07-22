@@ -115,13 +115,15 @@
             labeltotal = new Label();
             lblTotal = new Label();
             btnRemove = new Button();
-            pnlhospede = new Panel();
+            label1 = new Label();
+            dateTimePicker1 = new DateTimePicker();
+            labeldatanascimento = new Label();
             txttelefone = new MaskedTextBox();
             labeltelefone = new Label();
-            labeldatanascimento = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            textBox1 = new TextBox();
-            label1 = new Label();
+            gpbHospede = new GroupBox();
+            txtcpf = new MaskedTextBox();
+            btnsalvarhospede = new Button();
+            panelreservas = new Panel();
             Paneltop.SuspendLayout();
             pnlprincipal.SuspendLayout();
             panel29.SuspendLayout();
@@ -156,7 +158,8 @@
             panel13.SuspendLayout();
             panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            pnlhospede.SuspendLayout();
+            gpbHospede.SuspendLayout();
+            panelreservas.SuspendLayout();
             SuspendLayout();
             // 
             // Paneltop
@@ -213,7 +216,7 @@
             txtreservas.BackColor = SystemColors.ButtonFace;
             txtreservas.Font = new Font("Nirmala UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtreservas.ForeColor = Color.FromArgb(4, 99, 125);
-            txtreservas.Location = new Point(29, 22);
+            txtreservas.Location = new Point(38, 22);
             txtreservas.Margin = new Padding(4, 0, 4, 0);
             txtreservas.Name = "txtreservas";
             txtreservas.Size = new Size(172, 50);
@@ -245,7 +248,7 @@
             labelquarto.FlatStyle = FlatStyle.Flat;
             labelquarto.Font = new Font("Nirmala UI", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelquarto.ForeColor = SystemColors.ButtonFace;
-            labelquarto.Location = new Point(21, 133);
+            labelquarto.Location = new Point(21, 65);
             labelquarto.Name = "labelquarto";
             labelquarto.Size = new Size(66, 23);
             labelquarto.TabIndex = 7;
@@ -254,7 +257,7 @@
             // cbquarto
             // 
             cbquarto.FormattingEnabled = true;
-            cbquarto.Location = new Point(88, 133);
+            cbquarto.Location = new Point(88, 65);
             cbquarto.Name = "cbquarto";
             cbquarto.Size = new Size(65, 23);
             cbquarto.TabIndex = 8;
@@ -263,7 +266,7 @@
             // 
             cbmes.FormattingEnabled = true;
             cbmes.Items.AddRange(new object[] { "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" });
-            cbmes.Location = new Point(202, 133);
+            cbmes.Location = new Point(202, 65);
             cbmes.Name = "cbmes";
             cbmes.Size = new Size(102, 23);
             cbmes.TabIndex = 10;
@@ -275,7 +278,7 @@
             labelmes.FlatStyle = FlatStyle.Flat;
             labelmes.Font = new Font("Nirmala UI", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelmes.ForeColor = SystemColors.ButtonFace;
-            labelmes.Location = new Point(159, 133);
+            labelmes.Location = new Point(159, 65);
             labelmes.Name = "labelmes";
             labelmes.Size = new Size(42, 23);
             labelmes.TabIndex = 9;
@@ -285,7 +288,7 @@
             // 
             cbano.FormattingEnabled = true;
             cbano.Items.AddRange(new object[] { "2025", "2026" });
-            cbano.Location = new Point(353, 133);
+            cbano.Location = new Point(353, 65);
             cbano.Name = "cbano";
             cbano.Size = new Size(71, 23);
             cbano.TabIndex = 12;
@@ -297,7 +300,7 @@
             labelano.FlatStyle = FlatStyle.Flat;
             labelano.Font = new Font("Nirmala UI", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelano.ForeColor = SystemColors.ButtonFace;
-            labelano.Location = new Point(310, 133);
+            labelano.Location = new Point(310, 65);
             labelano.Name = "labelano";
             labelano.Size = new Size(42, 23);
             labelano.TabIndex = 11;
@@ -310,7 +313,7 @@
             labelvalordiaria.FlatStyle = FlatStyle.Flat;
             labelvalordiaria.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelvalordiaria.ForeColor = SystemColors.ButtonFace;
-            labelvalordiaria.Location = new Point(610, 135);
+            labelvalordiaria.Location = new Point(197, 23);
             labelvalordiaria.Name = "labelvalordiaria";
             labelvalordiaria.Size = new Size(143, 25);
             labelvalordiaria.TabIndex = 13;
@@ -319,7 +322,7 @@
             // tbxvalordiaria
             // 
             tbxvalordiaria.Cursor = Cursors.IBeam;
-            tbxvalordiaria.Location = new Point(755, 136);
+            tbxvalordiaria.Location = new Point(342, 24);
             tbxvalordiaria.Name = "tbxvalordiaria";
             tbxvalordiaria.Size = new Size(100, 23);
             tbxvalordiaria.TabIndex = 14;
@@ -327,7 +330,7 @@
             // tbxdias
             // 
             tbxdias.Cursor = Cursors.IBeam;
-            tbxdias.Location = new Point(485, 133);
+            tbxdias.Location = new Point(72, 21);
             tbxdias.Name = "tbxdias";
             tbxdias.Size = new Size(100, 23);
             tbxdias.TabIndex = 16;
@@ -339,7 +342,7 @@
             labeldias.FlatStyle = FlatStyle.Flat;
             labeldias.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labeldias.ForeColor = SystemColors.ButtonFace;
-            labeldias.Location = new Point(434, 132);
+            labeldias.Location = new Point(21, 20);
             labeldias.Name = "labeldias";
             labeldias.Size = new Size(49, 25);
             labeldias.TabIndex = 15;
@@ -347,9 +350,10 @@
             // 
             // tbxhospede
             // 
-            tbxhospede.Location = new Point(191, 19);
+            tbxhospede.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            tbxhospede.Location = new Point(199, 46);
             tbxhospede.Name = "tbxhospede";
-            tbxhospede.Size = new Size(216, 23);
+            tbxhospede.Size = new Size(216, 25);
             tbxhospede.TabIndex = 18;
             // 
             // labelnomehospede
@@ -359,7 +363,7 @@
             labelnomehospede.FlatStyle = FlatStyle.Flat;
             labelnomehospede.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelnomehospede.ForeColor = SystemColors.ButtonFace;
-            labelnomehospede.Location = new Point(11, 18);
+            labelnomehospede.Location = new Point(20, 46);
             labelnomehospede.Name = "labelnomehospede";
             labelnomehospede.Size = new Size(179, 25);
             labelnomehospede.TabIndex = 17;
@@ -372,7 +376,7 @@
             labelfuncionario.FlatStyle = FlatStyle.Flat;
             labelfuncionario.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelfuncionario.ForeColor = SystemColors.ButtonFace;
-            labelfuncionario.Location = new Point(461, 171);
+            labelfuncionario.Location = new Point(21, 515);
             labelfuncionario.Name = "labelfuncionario";
             labelfuncionario.Size = new Size(143, 25);
             labelfuncionario.TabIndex = 19;
@@ -381,7 +385,7 @@
             // cbxfuncionario
             // 
             cbxfuncionario.FormattingEnabled = true;
-            cbxfuncionario.Location = new Point(610, 171);
+            cbxfuncionario.Location = new Point(170, 515);
             cbxfuncionario.Name = "cbxfuncionario";
             cbxfuncionario.Size = new Size(249, 23);
             cbxfuncionario.TabIndex = 22;
@@ -420,7 +424,7 @@
             pnlprincipal.Controls.Add(panel28);
             pnlprincipal.Controls.Add(panel13);
             pnlprincipal.Controls.Add(panel14);
-            pnlprincipal.Location = new Point(20, 171);
+            pnlprincipal.Location = new Point(20, 103);
             pnlprincipal.Name = "pnlprincipal";
             pnlprincipal.Size = new Size(339, 271);
             pnlprincipal.TabIndex = 23;
@@ -1077,7 +1081,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(20, 479);
+            dataGridView1.Location = new Point(531, 656);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(339, 300);
             dataGridView1.TabIndex = 24;
@@ -1088,7 +1092,7 @@
             labeltotal.BackColor = Color.FromArgb(118, 177, 206);
             labeltotal.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labeltotal.ForeColor = SystemColors.ButtonFace;
-            labeltotal.Location = new Point(20, 451);
+            labeltotal.Location = new Point(531, 628);
             labeltotal.Name = "labeltotal";
             labeltotal.Size = new Size(198, 25);
             labeltotal.TabIndex = 25;
@@ -1100,7 +1104,7 @@
             lblTotal.BackColor = Color.FromArgb(118, 177, 206);
             lblTotal.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTotal.ForeColor = SystemColors.ControlLightLight;
-            lblTotal.Location = new Point(218, 451);
+            lblTotal.Location = new Point(729, 628);
             lblTotal.Name = "lblTotal";
             lblTotal.Size = new Size(23, 25);
             lblTotal.TabIndex = 26;
@@ -1113,34 +1117,54 @@
             btnRemove.FlatAppearance.BorderSize = 0;
             btnRemove.FlatStyle = FlatStyle.Flat;
             btnRemove.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnRemove.Location = new Point(334, 449);
+            btnRemove.Location = new Point(845, 626);
             btnRemove.Name = "btnRemove";
             btnRemove.Size = new Size(25, 25);
             btnRemove.TabIndex = 27;
             btnRemove.UseVisualStyleBackColor = true;
             // 
-            // pnlhospede
+            // label1
             // 
-            pnlhospede.Controls.Add(textBox1);
-            pnlhospede.Controls.Add(label1);
-            pnlhospede.Controls.Add(dateTimePicker1);
-            pnlhospede.Controls.Add(labeldatanascimento);
-            pnlhospede.Controls.Add(txttelefone);
-            pnlhospede.Controls.Add(labeltelefone);
-            pnlhospede.Controls.Add(tbxhospede);
-            pnlhospede.Controls.Add(labelnomehospede);
-            pnlhospede.Location = new Point(390, 243);
-            pnlhospede.Name = "pnlhospede";
-            pnlhospede.Size = new Size(539, 182);
-            pnlhospede.TabIndex = 28;
-            pnlhospede.Tag = "";
+            label1.AutoSize = true;
+            label1.BackColor = Color.FromArgb(118, 177, 206);
+            label1.FlatStyle = FlatStyle.Flat;
+            label1.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ButtonFace;
+            label1.Location = new Point(20, 160);
+            label1.Name = "label1";
+            label1.Size = new Size(135, 25);
+            label1.TabIndex = 72;
+            label1.Text = "N° Identidade";
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dateTimePicker1.Format = DateTimePickerFormat.Custom;
+            dateTimePicker1.Location = new Point(210, 122);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(86, 25);
+            dateTimePicker1.TabIndex = 71;
+            dateTimePicker1.Value = new DateTime(2025, 7, 20, 15, 27, 19, 0);
+            // 
+            // labeldatanascimento
+            // 
+            labeldatanascimento.AutoSize = true;
+            labeldatanascimento.BackColor = Color.FromArgb(118, 177, 206);
+            labeldatanascimento.FlatStyle = FlatStyle.Flat;
+            labeldatanascimento.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labeldatanascimento.ForeColor = SystemColors.ButtonFace;
+            labeldatanascimento.Location = new Point(20, 122);
+            labeldatanascimento.Name = "labeldatanascimento";
+            labeldatanascimento.Size = new Size(190, 25);
+            labeldatanascimento.TabIndex = 70;
+            labeldatanascimento.Text = "Data de Nascimento";
             // 
             // txttelefone
             // 
             txttelefone.Cursor = Cursors.IBeam;
             txttelefone.Enabled = false;
             txttelefone.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txttelefone.Location = new Point(102, 81);
+            txttelefone.Location = new Point(107, 84);
             txttelefone.Mask = "(99) 00000-0000";
             txttelefone.Name = "txttelefone";
             txttelefone.Size = new Size(100, 25);
@@ -1153,78 +1177,89 @@
             labeltelefone.FlatStyle = FlatStyle.Flat;
             labeltelefone.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labeltelefone.ForeColor = SystemColors.ButtonFace;
-            labeltelefone.Location = new Point(13, 81);
+            labeltelefone.Location = new Point(20, 84);
             labeltelefone.Name = "labeltelefone";
             labeltelefone.Size = new Size(87, 25);
             labeltelefone.TabIndex = 23;
             labeltelefone.Text = "Telefone";
             // 
-            // labeldatanascimento
+            // gpbHospede
             // 
-            labeldatanascimento.AutoSize = true;
-            labeldatanascimento.BackColor = Color.FromArgb(118, 177, 206);
-            labeldatanascimento.FlatStyle = FlatStyle.Flat;
-            labeldatanascimento.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labeldatanascimento.ForeColor = SystemColors.ButtonFace;
-            labeldatanascimento.Location = new Point(12, 119);
-            labeldatanascimento.Name = "labeldatanascimento";
-            labeldatanascimento.Size = new Size(190, 25);
-            labeldatanascimento.TabIndex = 70;
-            labeldatanascimento.Text = "Data de Nascimento";
+            gpbHospede.BackColor = SystemColors.ButtonFace;
+            gpbHospede.Controls.Add(btnsalvarhospede);
+            gpbHospede.Controls.Add(txtcpf);
+            gpbHospede.Controls.Add(label1);
+            gpbHospede.Controls.Add(labelnomehospede);
+            gpbHospede.Controls.Add(dateTimePicker1);
+            gpbHospede.Controls.Add(tbxhospede);
+            gpbHospede.Controls.Add(labeldatanascimento);
+            gpbHospede.Controls.Add(labeltelefone);
+            gpbHospede.Controls.Add(txttelefone);
+            gpbHospede.Font = new Font("Nirmala UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            gpbHospede.ForeColor = Color.FromArgb(118, 177, 206);
+            gpbHospede.Location = new Point(18, 112);
+            gpbHospede.Name = "gpbHospede";
+            gpbHospede.Size = new Size(509, 274);
+            gpbHospede.TabIndex = 29;
+            gpbHospede.TabStop = false;
+            gpbHospede.Text = "Informações do Hóspede";
             // 
-            // dateTimePicker1
+            // txtcpf
             // 
-            dateTimePicker1.Format = DateTimePickerFormat.Custom;
-            dateTimePicker1.Location = new Point(204, 120);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(82, 23);
-            dateTimePicker1.TabIndex = 71;
-            dateTimePicker1.Value = new DateTime(2025, 7, 20, 15, 27, 19, 0);
+            txtcpf.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtcpf.Location = new Point(155, 160);
+            txtcpf.Mask = "000.000.000-00";
+            txtcpf.Name = "txtcpf";
+            txtcpf.Size = new Size(100, 25);
+            txtcpf.TabIndex = 30;
             // 
-            // textBox1
+            // btnsalvarhospede
             // 
-            textBox1.Location = new Point(148, 156);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(216, 23);
-            textBox1.TabIndex = 73;
+            btnsalvarhospede.BackColor = Color.FromArgb(4, 99, 125);
+            btnsalvarhospede.FlatAppearance.BorderSize = 0;
+            btnsalvarhospede.FlatStyle = FlatStyle.Flat;
+            btnsalvarhospede.Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnsalvarhospede.ForeColor = SystemColors.ButtonFace;
+            btnsalvarhospede.Location = new Point(428, 243);
+            btnsalvarhospede.Name = "btnsalvarhospede";
+            btnsalvarhospede.Size = new Size(75, 25);
+            btnsalvarhospede.TabIndex = 73;
+            btnsalvarhospede.Text = "Salvar";
+            btnsalvarhospede.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // panelreservas
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(118, 177, 206);
-            label1.FlatStyle = FlatStyle.Flat;
-            label1.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(12, 155);
-            label1.Name = "label1";
-            label1.Size = new Size(135, 25);
-            label1.TabIndex = 72;
-            label1.Text = "N° Identidade";
+            panelreservas.BackColor = SystemColors.ButtonFace;
+            panelreservas.Controls.Add(pnlprincipal);
+            panelreservas.Controls.Add(cbano);
+            panelreservas.Controls.Add(labelano);
+            panelreservas.Controls.Add(cbmes);
+            panelreservas.Controls.Add(labelmes);
+            panelreservas.Controls.Add(cbquarto);
+            panelreservas.Controls.Add(cbxfuncionario);
+            panelreservas.Controls.Add(labelfuncionario);
+            panelreservas.Controls.Add(labelquarto);
+            panelreservas.Controls.Add(tbxvalordiaria);
+            panelreservas.Controls.Add(labeldias);
+            panelreservas.Controls.Add(labelvalordiaria);
+            panelreservas.Controls.Add(tbxdias);
+            panelreservas.Location = new Point(18, 392);
+            panelreservas.Name = "panelreservas";
+            panelreservas.Size = new Size(507, 564);
+            panelreservas.TabIndex = 30;
             // 
             // FrmReservas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ButtonFace;
+            BackColor = SystemColors.Window;
             ClientSize = new Size(1980, 973);
-            Controls.Add(pnlhospede);
+            Controls.Add(panelreservas);
+            Controls.Add(gpbHospede);
             Controls.Add(btnRemove);
             Controls.Add(lblTotal);
             Controls.Add(labeltotal);
             Controls.Add(dataGridView1);
-            Controls.Add(pnlprincipal);
-            Controls.Add(cbxfuncionario);
-            Controls.Add(labelfuncionario);
-            Controls.Add(tbxvalordiaria);
-            Controls.Add(labelvalordiaria);
-            Controls.Add(tbxdias);
-            Controls.Add(labeldias);
-            Controls.Add(cbano);
-            Controls.Add(labelano);
-            Controls.Add(cbmes);
-            Controls.Add(labelmes);
-            Controls.Add(cbquarto);
-            Controls.Add(labelquarto);
             Controls.Add(Paneltop);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmReservas";
@@ -1297,8 +1332,10 @@
             panel14.ResumeLayout(false);
             panel14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            pnlhospede.ResumeLayout(false);
-            pnlhospede.PerformLayout();
+            gpbHospede.ResumeLayout(false);
+            gpbHospede.PerformLayout();
+            panelreservas.ResumeLayout(false);
+            panelreservas.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -1391,12 +1428,14 @@
         private Label labeltotal;
         private Label lblTotal;
         private Button btnRemove;
-        private Panel pnlhospede;
         private Label labeltelefone;
         private MaskedTextBox txttelefone;
         private DateTimePicker dateTimePicker1;
         private Label labeldatanascimento;
-        private TextBox textBox1;
         private Label label1;
+        private GroupBox gpbHospede;
+        private MaskedTextBox txtcpf;
+        private Button btnsalvarhospede;
+        private Panel panelreservas;
     }
 }

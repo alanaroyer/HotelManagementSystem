@@ -136,6 +136,7 @@
             textBoxSenha.ForeColor = Color.Black;
             textBoxSenha.Location = new Point(90, 319);
             textBoxSenha.Margin = new Padding(4, 3, 4, 3);
+            textBoxSenha.MaxLength = 30;
             textBoxSenha.Multiline = true;
             textBoxSenha.Name = "textBoxSenha";
             textBoxSenha.PasswordChar = '•';
@@ -152,6 +153,7 @@
             textBoxNomeUsuario.ForeColor = Color.Black;
             textBoxNomeUsuario.Location = new Point(90, 220);
             textBoxNomeUsuario.Margin = new Padding(4, 3, 4, 3);
+            textBoxNomeUsuario.MaxLength = 30;
             textBoxNomeUsuario.Multiline = true;
             textBoxNomeUsuario.Name = "textBoxNomeUsuario";
             textBoxNomeUsuario.Size = new Size(250, 30);

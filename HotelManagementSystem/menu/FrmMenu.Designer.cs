@@ -30,21 +30,36 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu));
             PaneltopoLogin = new Panel();
+            txtmenu = new Label();
             BtnSair = new Button();
-            panel1 = new Panel();
+            panelleft = new Panel();
             PaneltopoLogin.SuspendLayout();
             SuspendLayout();
             // 
             // PaneltopoLogin
             // 
             PaneltopoLogin.BackColor = Color.FromArgb(4, 99, 125);
+            PaneltopoLogin.Controls.Add(txtmenu);
             PaneltopoLogin.Controls.Add(BtnSair);
             PaneltopoLogin.Dock = DockStyle.Top;
             PaneltopoLogin.Location = new Point(0, 0);
             PaneltopoLogin.Margin = new Padding(4, 3, 4, 3);
             PaneltopoLogin.Name = "PaneltopoLogin";
-            PaneltopoLogin.Size = new Size(1920, 60);
+            PaneltopoLogin.Size = new Size(1200, 95);
             PaneltopoLogin.TabIndex = 2;
+            // 
+            // txtmenu
+            // 
+            txtmenu.AutoSize = true;
+            txtmenu.BackColor = SystemColors.ButtonFace;
+            txtmenu.Font = new Font("Nirmala UI", 32.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtmenu.ForeColor = Color.FromArgb(4, 99, 125);
+            txtmenu.Location = new Point(100, 15);
+            txtmenu.Margin = new Padding(4, 0, 4, 0);
+            txtmenu.Name = "txtmenu";
+            txtmenu.Size = new Size(141, 59);
+            txtmenu.TabIndex = 7;
+            txtmenu.Text = "Menu";
             // 
             // BtnSair
             // 
@@ -56,35 +71,37 @@
             BtnSair.FlatStyle = FlatStyle.Flat;
             BtnSair.Font = new Font("Nirmala UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnSair.ForeColor = Color.White;
-            BtnSair.Location = new Point(1860, 0);
+            BtnSair.Location = new Point(1105, 0);
             BtnSair.Margin = new Padding(4, 3, 4, 3);
             BtnSair.Name = "BtnSair";
-            BtnSair.Size = new Size(60, 60);
+            BtnSair.Size = new Size(95, 95);
             BtnSair.TabIndex = 5;
             BtnSair.UseVisualStyleBackColor = true;
             BtnSair.Click += BtnSair_Click;
             // 
-            // panel1
+            // panelleft
             // 
-            panel1.BackColor = Color.FromArgb(4, 99, 125);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 60);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(300, 913);
-            panel1.TabIndex = 3;
+            panelleft.BackColor = Color.FromArgb(4, 99, 125);
+            panelleft.Dock = DockStyle.Left;
+            panelleft.Location = new Point(0, 95);
+            panelleft.Name = "panelleft";
+            panelleft.Size = new Size(300, 705);
+            panelleft.TabIndex = 3;
             // 
             // FrmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1920, 973);
-            Controls.Add(panel1);
+            BackColor = Color.White;
+            ClientSize = new Size(1200, 800);
+            Controls.Add(panelleft);
             Controls.Add(PaneltopoLogin);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmMenu";
-            StartPosition = FormStartPosition.Manual;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmMenu";
             PaneltopoLogin.ResumeLayout(false);
+            PaneltopoLogin.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -92,6 +109,7 @@
 
         private Panel PaneltopoLogin;
         private Button BtnSair;
-        private Panel panel1;
+        private Panel panelleft;
+        private Label txtmenu;
     }
 }

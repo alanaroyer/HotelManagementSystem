@@ -108,6 +108,7 @@
             TextBoxConfirmarSenha.ForeColor = Color.Black;
             TextBoxConfirmarSenha.Location = new Point(98, 393);
             TextBoxConfirmarSenha.Margin = new Padding(4, 3, 4, 3);
+            TextBoxConfirmarSenha.MaxLength = 30;
             TextBoxConfirmarSenha.Multiline = true;
             TextBoxConfirmarSenha.Name = "TextBoxConfirmarSenha";
             TextBoxConfirmarSenha.PasswordChar = '•';
@@ -168,6 +169,7 @@
             TextBoxSenha.ForeColor = Color.Black;
             TextBoxSenha.Location = new Point(98, 308);
             TextBoxSenha.Margin = new Padding(4, 3, 4, 3);
+            TextBoxSenha.MaxLength = 30;
             TextBoxSenha.Multiline = true;
             TextBoxSenha.Name = "TextBoxSenha";
             TextBoxSenha.PasswordChar = '•';
@@ -184,11 +186,11 @@
             textBoxNomeUsuario.ForeColor = Color.Black;
             textBoxNomeUsuario.Location = new Point(98, 220);
             textBoxNomeUsuario.Margin = new Padding(4, 3, 4, 3);
+            textBoxNomeUsuario.MaxLength = 30;
             textBoxNomeUsuario.Multiline = true;
             textBoxNomeUsuario.Name = "textBoxNomeUsuario";
             textBoxNomeUsuario.Size = new Size(250, 30);
             textBoxNomeUsuario.TabIndex = 32;
-            textBoxNomeUsuario.TextAlign = HorizontalAlignment.Center;
             // 
             // TextSenha
             // 

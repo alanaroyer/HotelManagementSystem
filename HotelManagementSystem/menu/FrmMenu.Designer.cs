@@ -100,6 +100,7 @@
             Name = "FrmMenu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmMenu";
+            WindowState = FormWindowState.Maximized;
             PaneltopoLogin.ResumeLayout(false);
             PaneltopoLogin.PerformLayout();
             ResumeLayout(false);

@@ -33,6 +33,7 @@
             txtmenu = new Label();
             BtnSair = new Button();
             panelleft = new Panel();
+            button1 = new Button();
             PaneltopoLogin.SuspendLayout();
             SuspendLayout();
             // 
@@ -54,7 +55,7 @@
             txtmenu.BackColor = SystemColors.ButtonFace;
             txtmenu.Font = new Font("Nirmala UI", 32.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtmenu.ForeColor = Color.FromArgb(4, 99, 125);
-            txtmenu.Location = new Point(100, 15);
+            txtmenu.Location = new Point(66, 15);
             txtmenu.Margin = new Padding(4, 0, 4, 0);
             txtmenu.Name = "txtmenu";
             txtmenu.Size = new Size(141, 59);
@@ -88,12 +89,22 @@
             panelleft.Size = new Size(300, 705);
             panelleft.TabIndex = 3;
             // 
+            // button1
+            // 
+            button1.Location = new Point(787, 286);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 4;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            // 
             // FrmMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1200, 800);
+            Controls.Add(button1);
             Controls.Add(panelleft);
             Controls.Add(PaneltopoLogin);
             FormBorderStyle = FormBorderStyle.None;
@@ -112,5 +123,6 @@
         private Button BtnSair;
         private Panel panelleft;
         private Label txtmenu;
+        private Button button1;
     }
 }

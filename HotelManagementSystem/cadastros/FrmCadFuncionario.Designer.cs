@@ -30,10 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadFuncionario));
             Paneltop = new Panel();
+            button1 = new Button();
+            textBox1 = new TextBox();
             txtfuncionario = new Label();
             BtnSair = new Button();
-            textBox1 = new TextBox();
-            button1 = new Button();
             Paneltop.SuspendLayout();
             SuspendLayout();
             // 
@@ -50,6 +50,29 @@
             Paneltop.Name = "Paneltop";
             Paneltop.Size = new Size(1200, 95);
             Paneltop.TabIndex = 3;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Transparent;
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.BackgroundImageLayout = ImageLayout.Stretch;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(851, 27);
+            button1.Name = "button1";
+            button1.Size = new Size(35, 35);
+            button1.TabIndex = 8;
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            textBox1.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(697, 32);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(148, 25);
+            textBox1.TabIndex = 7;
             // 
             // txtfuncionario
             // 
@@ -81,29 +104,6 @@
             BtnSair.TabIndex = 5;
             BtnSair.UseVisualStyleBackColor = true;
             BtnSair.Click += BtnSair_Click;
-            // 
-            // textBox1
-            // 
-            textBox1.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(697, 32);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(148, 25);
-            textBox1.TabIndex = 7;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Transparent;
-            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(851, 27);
-            button1.Name = "button1";
-            button1.Size = new Size(35, 35);
-            button1.TabIndex = 8;
-            button1.UseVisualStyleBackColor = false;
             // 
             // FrmCadFuncionario
             // 

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReservas));
             Paneltop = new Panel();
+            button1 = new Button();
             btnconsultar = new Button();
             Btnreservar = new Button();
             txtreservas = new Label();
@@ -121,11 +122,10 @@
             txttelefone = new MaskedTextBox();
             labeltelefone = new Label();
             gpbHospede = new GroupBox();
+            label2 = new Label();
             btnsalvarhospede = new Button();
             txtcpf = new MaskedTextBox();
             panelreservas = new Panel();
-            button1 = new Button();
-            label2 = new Label();
             Paneltop.SuspendLayout();
             pnlprincipal.SuspendLayout();
             panel29.SuspendLayout();
@@ -178,6 +178,23 @@
             Paneltop.Name = "Paneltop";
             Paneltop.Size = new Size(1200, 95);
             Paneltop.TabIndex = 2;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ButtonFace;
+            button1.Cursor = Cursors.Hand;
+            button1.FlatAppearance.BorderColor = Color.FromArgb(4, 99, 125);
+            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(4, 99, 125);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.FromArgb(4, 99, 125);
+            button1.Location = new Point(348, 22);
+            button1.Margin = new Padding(4, 3, 4, 3);
+            button1.Name = "button1";
+            button1.Size = new Size(150, 60);
+            button1.TabIndex = 29;
+            button1.Text = "CADASTRAR HOSPEDE";
+            button1.UseVisualStyleBackColor = false;
             // 
             // btnconsultar
             // 
@@ -316,7 +333,7 @@
             labelvalordiaria.FlatStyle = FlatStyle.Flat;
             labelvalordiaria.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelvalordiaria.ForeColor = SystemColors.ButtonFace;
-            labelvalordiaria.Location = new Point(197, 23);
+            labelvalordiaria.Location = new Point(200, 19);
             labelvalordiaria.Name = "labelvalordiaria";
             labelvalordiaria.Size = new Size(143, 25);
             labelvalordiaria.TabIndex = 13;
@@ -325,7 +342,7 @@
             // tbxvalordiaria
             // 
             tbxvalordiaria.Cursor = Cursors.IBeam;
-            tbxvalordiaria.Location = new Point(342, 24);
+            tbxvalordiaria.Location = new Point(344, 21);
             tbxvalordiaria.Name = "tbxvalordiaria";
             tbxvalordiaria.Size = new Size(100, 23);
             tbxvalordiaria.TabIndex = 14;
@@ -333,7 +350,7 @@
             // tbxdias
             // 
             tbxdias.Cursor = Cursors.IBeam;
-            tbxdias.Location = new Point(72, 21);
+            tbxdias.Location = new Point(69, 21);
             tbxdias.Name = "tbxdias";
             tbxdias.Size = new Size(100, 23);
             tbxdias.TabIndex = 16;
@@ -1205,10 +1222,22 @@
             gpbHospede.ForeColor = Color.FromArgb(118, 177, 206);
             gpbHospede.Location = new Point(18, 112);
             gpbHospede.Name = "gpbHospede";
-            gpbHospede.Size = new Size(509, 245);
+            gpbHospede.Size = new Size(509, 231);
             gpbHospede.TabIndex = 29;
             gpbHospede.TabStop = false;
             gpbHospede.Text = "Informações do Hóspede";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.FromArgb(118, 177, 206);
+            label2.FlatStyle = FlatStyle.Flat;
+            label2.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ButtonFace;
+            label2.Location = new Point(20, 200);
+            label2.Name = "label2";
+            label2.Size = new Size(0, 25);
+            label2.TabIndex = 74;
             // 
             // btnsalvarhospede
             // 
@@ -1217,7 +1246,7 @@
             btnsalvarhospede.FlatStyle = FlatStyle.Flat;
             btnsalvarhospede.Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnsalvarhospede.ForeColor = SystemColors.ButtonFace;
-            btnsalvarhospede.Location = new Point(370, 204);
+            btnsalvarhospede.Location = new Point(370, 200);
             btnsalvarhospede.Name = "btnsalvarhospede";
             btnsalvarhospede.Size = new Size(133, 25);
             btnsalvarhospede.TabIndex = 73;
@@ -1253,35 +1282,6 @@
             panelreservas.Name = "panelreservas";
             panelreservas.Size = new Size(507, 430);
             panelreservas.TabIndex = 30;
-            // 
-            // button1
-            // 
-            button1.BackColor = SystemColors.ButtonFace;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderColor = Color.FromArgb(4, 99, 125);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(4, 99, 125);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.FromArgb(4, 99, 125);
-            button1.Location = new Point(348, 22);
-            button1.Margin = new Padding(4, 3, 4, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(150, 60);
-            button1.TabIndex = 29;
-            button1.Text = "CADASTRAR HOSPEDE";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(118, 177, 206);
-            label2.FlatStyle = FlatStyle.Flat;
-            label2.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.ButtonFace;
-            label2.Location = new Point(20, 200);
-            label2.Name = "label2";
-            label2.Size = new Size(0, 25);
-            label2.TabIndex = 74;
             // 
             // FrmReservas
             // 

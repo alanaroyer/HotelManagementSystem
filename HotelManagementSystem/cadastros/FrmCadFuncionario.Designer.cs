@@ -48,7 +48,7 @@
             Paneltop.Location = new Point(0, 0);
             Paneltop.Margin = new Padding(4, 3, 4, 3);
             Paneltop.Name = "Paneltop";
-            Paneltop.Size = new Size(1200, 95);
+            Paneltop.Size = new Size(1000, 95);
             Paneltop.TabIndex = 3;
             // 
             // button1
@@ -60,7 +60,7 @@
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(851, 27);
+            button1.Location = new Point(642, 22);
             button1.Name = "button1";
             button1.Size = new Size(35, 35);
             button1.TabIndex = 8;
@@ -69,7 +69,7 @@
             // textBox1
             // 
             textBox1.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            textBox1.Location = new Point(697, 32);
+            textBox1.Location = new Point(488, 27);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(148, 25);
             textBox1.TabIndex = 7;
@@ -97,7 +97,7 @@
             BtnSair.FlatStyle = FlatStyle.Flat;
             BtnSair.Font = new Font("Nirmala UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnSair.ForeColor = Color.White;
-            BtnSair.Location = new Point(1115, 0);
+            BtnSair.Location = new Point(915, 0);
             BtnSair.Margin = new Padding(4, 3, 4, 3);
             BtnSair.Name = "BtnSair";
             BtnSair.Size = new Size(85, 95);
@@ -109,7 +109,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1200, 800);
+            ClientSize = new Size(1000, 800);
             Controls.Add(Paneltop);
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmCadFuncionario";

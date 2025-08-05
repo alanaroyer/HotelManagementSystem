@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReservas));
             Paneltop = new Panel();
-            button1 = new Button();
+            btncadastrarhospede = new Button();
             btnconsultar = new Button();
-            Btnreservar = new Button();
+            btncriarreserva = new Button();
             txtreservas = new Label();
             BtnSair = new Button();
             labelquarto = new Label();
@@ -167,34 +167,35 @@
             // Paneltop
             // 
             Paneltop.BackColor = Color.FromArgb(4, 99, 125);
-            Paneltop.Controls.Add(button1);
+            Paneltop.Controls.Add(btncadastrarhospede);
             Paneltop.Controls.Add(btnconsultar);
-            Paneltop.Controls.Add(Btnreservar);
+            Paneltop.Controls.Add(btncriarreserva);
             Paneltop.Controls.Add(txtreservas);
             Paneltop.Controls.Add(BtnSair);
             Paneltop.Dock = DockStyle.Top;
             Paneltop.Location = new Point(0, 0);
             Paneltop.Margin = new Padding(4, 3, 4, 3);
             Paneltop.Name = "Paneltop";
-            Paneltop.Size = new Size(1200, 95);
+            Paneltop.Size = new Size(1000, 95);
             Paneltop.TabIndex = 2;
             // 
-            // button1
+            // btncadastrarhospede
             // 
-            button1.BackColor = SystemColors.ButtonFace;
-            button1.Cursor = Cursors.Hand;
-            button1.FlatAppearance.BorderColor = Color.FromArgb(4, 99, 125);
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(4, 99, 125);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.FromArgb(4, 99, 125);
-            button1.Location = new Point(348, 22);
-            button1.Margin = new Padding(4, 3, 4, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(150, 60);
-            button1.TabIndex = 29;
-            button1.Text = "CADASTRAR HOSPEDE";
-            button1.UseVisualStyleBackColor = false;
+            btncadastrarhospede.BackColor = SystemColors.ButtonFace;
+            btncadastrarhospede.Cursor = Cursors.Hand;
+            btncadastrarhospede.FlatAppearance.BorderColor = Color.FromArgb(4, 99, 125);
+            btncadastrarhospede.FlatAppearance.MouseOverBackColor = Color.FromArgb(4, 99, 125);
+            btncadastrarhospede.FlatStyle = FlatStyle.Flat;
+            btncadastrarhospede.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btncadastrarhospede.ForeColor = Color.FromArgb(4, 99, 125);
+            btncadastrarhospede.Location = new Point(303, 22);
+            btncadastrarhospede.Margin = new Padding(4, 3, 4, 3);
+            btncadastrarhospede.Name = "btncadastrarhospede";
+            btncadastrarhospede.Size = new Size(150, 60);
+            btncadastrarhospede.TabIndex = 29;
+            btncadastrarhospede.Text = "CADASTRAR HOSPEDE";
+            btncadastrarhospede.UseVisualStyleBackColor = false;
+            btncadastrarhospede.Click += button1_Click;
             // 
             // btnconsultar
             // 
@@ -213,22 +214,22 @@
             btnconsultar.Text = "CONSULTAR RESERVAS";
             btnconsultar.UseVisualStyleBackColor = false;
             // 
-            // Btnreservar
+            // btncriarreserva
             // 
-            Btnreservar.BackColor = SystemColors.ButtonFace;
-            Btnreservar.Cursor = Cursors.Hand;
-            Btnreservar.FlatAppearance.BorderColor = Color.FromArgb(4, 99, 125);
-            Btnreservar.FlatAppearance.MouseOverBackColor = Color.FromArgb(4, 99, 125);
-            Btnreservar.FlatStyle = FlatStyle.Flat;
-            Btnreservar.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            Btnreservar.ForeColor = Color.FromArgb(4, 99, 125);
-            Btnreservar.Location = new Point(530, 22);
-            Btnreservar.Margin = new Padding(4, 3, 4, 3);
-            Btnreservar.Name = "Btnreservar";
-            Btnreservar.Size = new Size(150, 60);
-            Btnreservar.TabIndex = 27;
-            Btnreservar.Text = "CRIAR RESERVA";
-            Btnreservar.UseVisualStyleBackColor = false;
+            btncriarreserva.BackColor = SystemColors.ButtonFace;
+            btncriarreserva.Cursor = Cursors.Hand;
+            btncriarreserva.FlatAppearance.BorderColor = Color.FromArgb(4, 99, 125);
+            btncriarreserva.FlatAppearance.MouseOverBackColor = Color.FromArgb(4, 99, 125);
+            btncriarreserva.FlatStyle = FlatStyle.Flat;
+            btncriarreserva.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btncriarreserva.ForeColor = Color.FromArgb(4, 99, 125);
+            btncriarreserva.Location = new Point(530, 22);
+            btncriarreserva.Margin = new Padding(4, 3, 4, 3);
+            btncriarreserva.Name = "btncriarreserva";
+            btncriarreserva.Size = new Size(150, 60);
+            btncriarreserva.TabIndex = 27;
+            btncriarreserva.Text = "CRIAR RESERVA";
+            btncriarreserva.UseVisualStyleBackColor = false;
             // 
             // txtreservas
             // 
@@ -253,7 +254,7 @@
             BtnSair.FlatStyle = FlatStyle.Flat;
             BtnSair.Font = new Font("Nirmala UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnSair.ForeColor = Color.White;
-            BtnSair.Location = new Point(1115, 0);
+            BtnSair.Location = new Point(915, 0);
             BtnSair.Margin = new Padding(4, 3, 4, 3);
             BtnSair.Name = "BtnSair";
             BtnSair.Size = new Size(85, 95);
@@ -1226,6 +1227,7 @@
             gpbHospede.TabIndex = 29;
             gpbHospede.TabStop = false;
             gpbHospede.Text = "Informações do Hóspede";
+            gpbHospede.Visible = false;
             // 
             // label2
             // 
@@ -1280,7 +1282,7 @@
             panelreservas.Controls.Add(tbxdias);
             panelreservas.Location = new Point(18, 358);
             panelreservas.Name = "panelreservas";
-            panelreservas.Size = new Size(507, 430);
+            panelreservas.Size = new Size(480, 430);
             panelreservas.TabIndex = 30;
             // 
             // FrmReservas
@@ -1288,7 +1290,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
-            ClientSize = new Size(1200, 800);
+            ClientSize = new Size(1000, 800);
             Controls.Add(panelreservas);
             Controls.Add(gpbHospede);
             Controls.Add(btnRemove);
@@ -1457,7 +1459,7 @@
         private Label lbl30;
         private Panel panel31;
         private Label lbl31;
-        private Button Btnreservar;
+        private Button btncriarreserva;
         private Button btnconsultar;
         private DataGridView dataGridView1;
         private Label labeltotal;
@@ -1472,7 +1474,7 @@
         private MaskedTextBox txtcpf;
         private Button btnsalvarhospede;
         private Panel panelreservas;
-        private Button button1;
+        private Button btncadastrarhospede;
         private Label label2;
     }
 }

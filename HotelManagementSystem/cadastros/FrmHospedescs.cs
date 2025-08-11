@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace HotelManagementSystem.cadastros
 {
-    public partial class FrmConsultarReserva : Form
+    public partial class FrmHospedescs : Form
     {
-        public FrmConsultarReserva()
+        public FrmHospedescs()
         {
             InitializeComponent();
+        }
+
+        private void BtnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

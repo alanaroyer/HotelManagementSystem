@@ -30,8 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmReservas));
             Paneltop = new Panel();
-            btncadastrarhospede = new Button();
-            btncriarreserva = new Button();
             txtreservas = new Label();
             BtnSair = new Button();
             labelquarto = new Label();
@@ -44,8 +42,6 @@
             tbxvalordiaria = new TextBox();
             tbxdias = new TextBox();
             labeldias = new Label();
-            tbxhospede = new TextBox();
-            labelnomehospede = new Label();
             labelfuncionario = new Label();
             cbxfuncionario = new ComboBox();
             pnlprincipal = new Panel();
@@ -115,15 +111,6 @@
             labeltotal = new Label();
             lblTotal = new Label();
             btnRemove = new Button();
-            label1 = new Label();
-            datanasc = new DateTimePicker();
-            labeldatanascimento = new Label();
-            txttelefone = new MaskedTextBox();
-            labeltelefone = new Label();
-            gpbHospede = new GroupBox();
-            label2 = new Label();
-            btnsalvarhospede = new Button();
-            txtcpf = new MaskedTextBox();
             panelreservas = new Panel();
             Paneltop.SuspendLayout();
             pnlprincipal.SuspendLayout();
@@ -159,58 +146,20 @@
             panel13.SuspendLayout();
             panel14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            gpbHospede.SuspendLayout();
             panelreservas.SuspendLayout();
             SuspendLayout();
             // 
             // Paneltop
             // 
             Paneltop.BackColor = Color.FromArgb(4, 99, 125);
-            Paneltop.Controls.Add(btncadastrarhospede);
-            Paneltop.Controls.Add(btncriarreserva);
             Paneltop.Controls.Add(txtreservas);
             Paneltop.Controls.Add(BtnSair);
             Paneltop.Dock = DockStyle.Top;
             Paneltop.Location = new Point(0, 0);
-            Paneltop.Margin = new Padding(4, 3, 4, 3);
+            Paneltop.Margin = new Padding(5, 4, 5, 4);
             Paneltop.Name = "Paneltop";
-            Paneltop.Size = new Size(1000, 95);
+            Paneltop.Size = new Size(1143, 127);
             Paneltop.TabIndex = 2;
-            // 
-            // btncadastrarhospede
-            // 
-            btncadastrarhospede.BackColor = SystemColors.ButtonFace;
-            btncadastrarhospede.Cursor = Cursors.Hand;
-            btncadastrarhospede.FlatAppearance.BorderColor = Color.FromArgb(4, 99, 125);
-            btncadastrarhospede.FlatAppearance.MouseOverBackColor = Color.FromArgb(4, 99, 125);
-            btncadastrarhospede.FlatStyle = FlatStyle.Flat;
-            btncadastrarhospede.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btncadastrarhospede.ForeColor = Color.FromArgb(4, 99, 125);
-            btncadastrarhospede.Location = new Point(360, 22);
-            btncadastrarhospede.Margin = new Padding(4, 3, 4, 3);
-            btncadastrarhospede.Name = "btncadastrarhospede";
-            btncadastrarhospede.Size = new Size(150, 60);
-            btncadastrarhospede.TabIndex = 29;
-            btncadastrarhospede.Text = "CADASTRAR HOSPEDE";
-            btncadastrarhospede.UseVisualStyleBackColor = false;
-            btncadastrarhospede.Click += button1_Click;
-            // 
-            // btncriarreserva
-            // 
-            btncriarreserva.BackColor = SystemColors.ButtonFace;
-            btncriarreserva.Cursor = Cursors.Hand;
-            btncriarreserva.FlatAppearance.BorderColor = Color.FromArgb(4, 99, 125);
-            btncriarreserva.FlatAppearance.MouseOverBackColor = Color.FromArgb(4, 99, 125);
-            btncriarreserva.FlatStyle = FlatStyle.Flat;
-            btncriarreserva.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btncriarreserva.ForeColor = Color.FromArgb(4, 99, 125);
-            btncriarreserva.Location = new Point(524, 22);
-            btncriarreserva.Margin = new Padding(4, 3, 4, 3);
-            btncriarreserva.Name = "btncriarreserva";
-            btncriarreserva.Size = new Size(150, 60);
-            btncriarreserva.TabIndex = 27;
-            btncriarreserva.Text = "CRIAR RESERVA";
-            btncriarreserva.UseVisualStyleBackColor = false;
             // 
             // txtreservas
             // 
@@ -218,10 +167,10 @@
             txtreservas.BackColor = SystemColors.ButtonFace;
             txtreservas.Font = new Font("Nirmala UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtreservas.ForeColor = Color.FromArgb(4, 99, 125);
-            txtreservas.Location = new Point(38, 22);
-            txtreservas.Margin = new Padding(4, 0, 4, 0);
+            txtreservas.Location = new Point(43, 29);
+            txtreservas.Margin = new Padding(5, 0, 5, 0);
             txtreservas.Name = "txtreservas";
-            txtreservas.Size = new Size(172, 50);
+            txtreservas.Size = new Size(219, 62);
             txtreservas.TabIndex = 6;
             txtreservas.Text = "Reservas";
             // 
@@ -235,10 +184,10 @@
             BtnSair.FlatStyle = FlatStyle.Flat;
             BtnSair.Font = new Font("Nirmala UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnSair.ForeColor = Color.White;
-            BtnSair.Location = new Point(915, 0);
-            BtnSair.Margin = new Padding(4, 3, 4, 3);
+            BtnSair.Location = new Point(1046, 0);
+            BtnSair.Margin = new Padding(5, 4, 5, 4);
             BtnSair.Name = "BtnSair";
-            BtnSair.Size = new Size(85, 95);
+            BtnSair.Size = new Size(97, 127);
             BtnSair.TabIndex = 5;
             BtnSair.UseVisualStyleBackColor = true;
             BtnSair.Click += BtnSair_Click;
@@ -250,27 +199,29 @@
             labelquarto.FlatStyle = FlatStyle.Flat;
             labelquarto.Font = new Font("Nirmala UI", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelquarto.ForeColor = SystemColors.ButtonFace;
-            labelquarto.Location = new Point(20, 65);
+            labelquarto.Location = new Point(23, 87);
             labelquarto.Name = "labelquarto";
-            labelquarto.Size = new Size(66, 23);
+            labelquarto.Size = new Size(87, 30);
             labelquarto.TabIndex = 7;
             labelquarto.Text = "Quarto";
             // 
             // cbquarto
             // 
             cbquarto.FormattingEnabled = true;
-            cbquarto.Location = new Point(88, 65);
+            cbquarto.Location = new Point(101, 87);
+            cbquarto.Margin = new Padding(3, 4, 3, 4);
             cbquarto.Name = "cbquarto";
-            cbquarto.Size = new Size(65, 23);
+            cbquarto.Size = new Size(74, 28);
             cbquarto.TabIndex = 8;
             // 
             // cbmes
             // 
             cbmes.FormattingEnabled = true;
             cbmes.Items.AddRange(new object[] { "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" });
-            cbmes.Location = new Point(202, 65);
+            cbmes.Location = new Point(231, 87);
+            cbmes.Margin = new Padding(3, 4, 3, 4);
             cbmes.Name = "cbmes";
-            cbmes.Size = new Size(102, 23);
+            cbmes.Size = new Size(116, 28);
             cbmes.TabIndex = 10;
             // 
             // labelmes
@@ -280,9 +231,9 @@
             labelmes.FlatStyle = FlatStyle.Flat;
             labelmes.Font = new Font("Nirmala UI", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelmes.ForeColor = SystemColors.ButtonFace;
-            labelmes.Location = new Point(159, 65);
+            labelmes.Location = new Point(182, 87);
             labelmes.Name = "labelmes";
-            labelmes.Size = new Size(42, 23);
+            labelmes.Size = new Size(56, 30);
             labelmes.TabIndex = 9;
             labelmes.Text = "Mês";
             // 
@@ -290,9 +241,10 @@
             // 
             cbano.FormattingEnabled = true;
             cbano.Items.AddRange(new object[] { "2025", "2026" });
-            cbano.Location = new Point(353, 65);
+            cbano.Location = new Point(403, 87);
+            cbano.Margin = new Padding(3, 4, 3, 4);
             cbano.Name = "cbano";
-            cbano.Size = new Size(71, 23);
+            cbano.Size = new Size(81, 28);
             cbano.TabIndex = 12;
             // 
             // labelano
@@ -302,9 +254,9 @@
             labelano.FlatStyle = FlatStyle.Flat;
             labelano.Font = new Font("Nirmala UI", 12.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelano.ForeColor = SystemColors.ButtonFace;
-            labelano.Location = new Point(310, 65);
+            labelano.Location = new Point(354, 87);
             labelano.Name = "labelano";
-            labelano.Size = new Size(42, 23);
+            labelano.Size = new Size(54, 30);
             labelano.TabIndex = 11;
             labelano.Text = "Ano";
             // 
@@ -315,26 +267,28 @@
             labelvalordiaria.FlatStyle = FlatStyle.Flat;
             labelvalordiaria.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelvalordiaria.ForeColor = SystemColors.ButtonFace;
-            labelvalordiaria.Location = new Point(200, 19);
+            labelvalordiaria.Location = new Point(229, 25);
             labelvalordiaria.Name = "labelvalordiaria";
-            labelvalordiaria.Size = new Size(143, 25);
+            labelvalordiaria.Size = new Size(183, 32);
             labelvalordiaria.TabIndex = 13;
             labelvalordiaria.Text = "Valor da Diária";
             // 
             // tbxvalordiaria
             // 
             tbxvalordiaria.Cursor = Cursors.IBeam;
-            tbxvalordiaria.Location = new Point(344, 21);
+            tbxvalordiaria.Location = new Point(414, 28);
+            tbxvalordiaria.Margin = new Padding(3, 4, 3, 4);
             tbxvalordiaria.Name = "tbxvalordiaria";
-            tbxvalordiaria.Size = new Size(100, 23);
+            tbxvalordiaria.Size = new Size(114, 27);
             tbxvalordiaria.TabIndex = 14;
             // 
             // tbxdias
             // 
             tbxdias.Cursor = Cursors.IBeam;
-            tbxdias.Location = new Point(69, 21);
+            tbxdias.Location = new Point(79, 28);
+            tbxdias.Margin = new Padding(3, 4, 3, 4);
             tbxdias.Name = "tbxdias";
-            tbxdias.Size = new Size(100, 23);
+            tbxdias.Size = new Size(114, 27);
             tbxdias.TabIndex = 16;
             // 
             // labeldias
@@ -344,32 +298,11 @@
             labeldias.FlatStyle = FlatStyle.Flat;
             labeldias.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labeldias.ForeColor = SystemColors.ButtonFace;
-            labeldias.Location = new Point(20, 20);
+            labeldias.Location = new Point(23, 27);
             labeldias.Name = "labeldias";
-            labeldias.Size = new Size(49, 25);
+            labeldias.Size = new Size(63, 32);
             labeldias.TabIndex = 15;
             labeldias.Text = "Dias";
-            // 
-            // tbxhospede
-            // 
-            tbxhospede.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            tbxhospede.Location = new Point(199, 46);
-            tbxhospede.Name = "tbxhospede";
-            tbxhospede.Size = new Size(216, 25);
-            tbxhospede.TabIndex = 18;
-            // 
-            // labelnomehospede
-            // 
-            labelnomehospede.AutoSize = true;
-            labelnomehospede.BackColor = Color.FromArgb(118, 177, 206);
-            labelnomehospede.FlatStyle = FlatStyle.Flat;
-            labelnomehospede.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labelnomehospede.ForeColor = SystemColors.ButtonFace;
-            labelnomehospede.Location = new Point(20, 46);
-            labelnomehospede.Name = "labelnomehospede";
-            labelnomehospede.Size = new Size(179, 25);
-            labelnomehospede.TabIndex = 17;
-            labelnomehospede.Text = "Nome do Hóspede";
             // 
             // labelfuncionario
             // 
@@ -378,18 +311,19 @@
             labelfuncionario.FlatStyle = FlatStyle.Flat;
             labelfuncionario.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labelfuncionario.ForeColor = SystemColors.ButtonFace;
-            labelfuncionario.Location = new Point(20, 393);
+            labelfuncionario.Location = new Point(23, 524);
             labelfuncionario.Name = "labelfuncionario";
-            labelfuncionario.Size = new Size(143, 25);
+            labelfuncionario.Size = new Size(181, 32);
             labelfuncionario.TabIndex = 19;
             labelfuncionario.Text = "Funcionário(a)";
             // 
             // cbxfuncionario
             // 
             cbxfuncionario.FormattingEnabled = true;
-            cbxfuncionario.Location = new Point(165, 395);
+            cbxfuncionario.Location = new Point(189, 527);
+            cbxfuncionario.Margin = new Padding(3, 4, 3, 4);
             cbxfuncionario.Name = "cbxfuncionario";
-            cbxfuncionario.Size = new Size(232, 23);
+            cbxfuncionario.Size = new Size(265, 28);
             cbxfuncionario.TabIndex = 22;
             // 
             // pnlprincipal
@@ -426,18 +360,20 @@
             pnlprincipal.Controls.Add(panel28);
             pnlprincipal.Controls.Add(panel13);
             pnlprincipal.Controls.Add(panel14);
-            pnlprincipal.Location = new Point(20, 103);
+            pnlprincipal.Location = new Point(23, 137);
+            pnlprincipal.Margin = new Padding(3, 4, 3, 4);
             pnlprincipal.Name = "pnlprincipal";
-            pnlprincipal.Size = new Size(339, 271);
+            pnlprincipal.Size = new Size(389, 357);
             pnlprincipal.TabIndex = 23;
             pnlprincipal.Visible = false;
             // 
             // panel29
             // 
             panel29.Controls.Add(lbl29);
-            panel29.Location = new Point(12, 219);
+            panel29.Location = new Point(14, 292);
+            panel29.Margin = new Padding(3, 4, 3, 4);
             panel29.Name = "panel29";
-            panel29.Size = new Size(40, 40);
+            panel29.Size = new Size(46, 53);
             panel29.TabIndex = 44;
             // 
             // lbl29
@@ -446,9 +382,9 @@
             lbl29.BackColor = Color.Transparent;
             lbl29.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl29.ForeColor = SystemColors.ButtonFace;
-            lbl29.Location = new Point(2, 5);
+            lbl29.Location = new Point(2, 7);
             lbl29.Name = "lbl29";
-            lbl29.Size = new Size(37, 30);
+            lbl29.Size = new Size(49, 37);
             lbl29.TabIndex = 25;
             lbl29.Text = "29";
             // 
@@ -456,9 +392,10 @@
             // 
             panel7.Controls.Add(lbl07);
             panel7.Font = new Font("Segoe UI", 15.75F);
-            panel7.Location = new Point(289, 15);
+            panel7.Location = new Point(330, 20);
+            panel7.Margin = new Padding(3, 4, 3, 4);
             panel7.Name = "panel7";
-            panel7.Size = new Size(40, 40);
+            panel7.Size = new Size(46, 53);
             panel7.TabIndex = 29;
             // 
             // lbl07
@@ -467,9 +404,9 @@
             lbl07.BackColor = Color.Transparent;
             lbl07.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl07.ForeColor = SystemColors.ButtonFace;
-            lbl07.Location = new Point(2, 5);
+            lbl07.Location = new Point(2, 7);
             lbl07.Name = "lbl07";
-            lbl07.Size = new Size(37, 30);
+            lbl07.Size = new Size(49, 37);
             lbl07.TabIndex = 25;
             lbl07.Text = "07";
             // 
@@ -477,9 +414,10 @@
             // 
             panel15.Controls.Add(lbl15);
             panel15.Font = new Font("Segoe UI", 15.75F);
-            panel15.Location = new Point(12, 117);
+            panel15.Location = new Point(14, 156);
+            panel15.Margin = new Padding(3, 4, 3, 4);
             panel15.Name = "panel15";
-            panel15.Size = new Size(40, 40);
+            panel15.Size = new Size(46, 53);
             panel15.TabIndex = 52;
             // 
             // lbl15
@@ -488,18 +426,19 @@
             lbl15.BackColor = Color.Transparent;
             lbl15.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl15.ForeColor = SystemColors.ButtonFace;
-            lbl15.Location = new Point(2, 5);
+            lbl15.Location = new Point(2, 7);
             lbl15.Name = "lbl15";
-            lbl15.Size = new Size(37, 30);
+            lbl15.Size = new Size(49, 37);
             lbl15.TabIndex = 25;
             lbl15.Text = "15";
             // 
             // panel30
             // 
             panel30.Controls.Add(lbl30);
-            panel30.Location = new Point(58, 219);
+            panel30.Location = new Point(66, 292);
+            panel30.Margin = new Padding(3, 4, 3, 4);
             panel30.Name = "panel30";
-            panel30.Size = new Size(40, 40);
+            panel30.Size = new Size(46, 53);
             panel30.TabIndex = 43;
             // 
             // lbl30
@@ -508,18 +447,19 @@
             lbl30.BackColor = Color.Transparent;
             lbl30.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl30.ForeColor = SystemColors.ButtonFace;
-            lbl30.Location = new Point(2, 5);
+            lbl30.Location = new Point(2, 7);
             lbl30.Name = "lbl30";
-            lbl30.Size = new Size(37, 30);
+            lbl30.Size = new Size(49, 37);
             lbl30.TabIndex = 25;
             lbl30.Text = "30";
             // 
             // panel31
             // 
             panel31.Controls.Add(lbl31);
-            panel31.Location = new Point(104, 219);
+            panel31.Location = new Point(119, 292);
+            panel31.Margin = new Padding(3, 4, 3, 4);
             panel31.Name = "panel31";
-            panel31.Size = new Size(40, 40);
+            panel31.Size = new Size(46, 53);
             panel31.TabIndex = 42;
             // 
             // lbl31
@@ -528,9 +468,9 @@
             lbl31.BackColor = Color.Transparent;
             lbl31.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl31.ForeColor = SystemColors.ButtonFace;
-            lbl31.Location = new Point(2, 5);
+            lbl31.Location = new Point(2, 7);
             lbl31.Name = "lbl31";
-            lbl31.Size = new Size(37, 30);
+            lbl31.Size = new Size(49, 37);
             lbl31.TabIndex = 25;
             lbl31.Text = "31";
             // 
@@ -538,9 +478,10 @@
             // 
             panel8.Controls.Add(lbl08);
             panel8.Font = new Font("Segoe UI", 15.75F);
-            panel8.Location = new Point(12, 66);
+            panel8.Location = new Point(14, 88);
+            panel8.Margin = new Padding(3, 4, 3, 4);
             panel8.Name = "panel8";
-            panel8.Size = new Size(40, 40);
+            panel8.Size = new Size(46, 53);
             panel8.TabIndex = 38;
             // 
             // lbl08
@@ -549,9 +490,9 @@
             lbl08.BackColor = Color.Transparent;
             lbl08.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl08.ForeColor = SystemColors.ButtonFace;
-            lbl08.Location = new Point(2, 5);
+            lbl08.Location = new Point(2, 7);
             lbl08.Name = "lbl08";
-            lbl08.Size = new Size(37, 30);
+            lbl08.Size = new Size(49, 37);
             lbl08.TabIndex = 25;
             lbl08.Text = "08";
             // 
@@ -559,9 +500,10 @@
             // 
             panel16.Controls.Add(lbl16);
             panel16.Font = new Font("Segoe UI", 15.75F);
-            panel16.Location = new Point(58, 117);
+            panel16.Location = new Point(66, 156);
+            panel16.Margin = new Padding(3, 4, 3, 4);
             panel16.Name = "panel16";
-            panel16.Size = new Size(40, 40);
+            panel16.Size = new Size(46, 53);
             panel16.TabIndex = 45;
             // 
             // lbl16
@@ -570,9 +512,9 @@
             lbl16.BackColor = Color.Transparent;
             lbl16.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl16.ForeColor = SystemColors.ButtonFace;
-            lbl16.Location = new Point(2, 5);
+            lbl16.Location = new Point(2, 7);
             lbl16.Name = "lbl16";
-            lbl16.Size = new Size(37, 30);
+            lbl16.Size = new Size(49, 37);
             lbl16.TabIndex = 25;
             lbl16.Text = "16";
             // 
@@ -580,9 +522,10 @@
             // 
             panel5.Controls.Add(lbl05);
             panel5.Font = new Font("Segoe UI", 15.75F);
-            panel5.Location = new Point(197, 15);
+            panel5.Location = new Point(225, 20);
+            panel5.Margin = new Padding(3, 4, 3, 4);
             panel5.Name = "panel5";
-            panel5.Size = new Size(40, 40);
+            panel5.Size = new Size(46, 53);
             panel5.TabIndex = 31;
             // 
             // lbl05
@@ -591,9 +534,9 @@
             lbl05.BackColor = Color.Transparent;
             lbl05.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl05.ForeColor = SystemColors.ButtonFace;
-            lbl05.Location = new Point(2, 5);
+            lbl05.Location = new Point(2, 7);
             lbl05.Name = "lbl05";
-            lbl05.Size = new Size(37, 30);
+            lbl05.Size = new Size(49, 37);
             lbl05.TabIndex = 25;
             lbl05.Text = "05";
             // 
@@ -601,9 +544,10 @@
             // 
             panel17.Controls.Add(lbl17);
             panel17.Font = new Font("Segoe UI", 15.75F);
-            panel17.Location = new Point(104, 117);
+            panel17.Location = new Point(119, 156);
+            panel17.Margin = new Padding(3, 4, 3, 4);
             panel17.Name = "panel17";
-            panel17.Size = new Size(40, 40);
+            panel17.Size = new Size(46, 53);
             panel17.TabIndex = 44;
             // 
             // lbl17
@@ -612,9 +556,9 @@
             lbl17.BackColor = Color.Transparent;
             lbl17.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl17.ForeColor = SystemColors.ButtonFace;
-            lbl17.Location = new Point(2, 5);
+            lbl17.Location = new Point(2, 7);
             lbl17.Name = "lbl17";
-            lbl17.Size = new Size(37, 30);
+            lbl17.Size = new Size(49, 37);
             lbl17.TabIndex = 25;
             lbl17.Text = "17";
             // 
@@ -622,9 +566,10 @@
             // 
             panel6.Controls.Add(lbl06);
             panel6.Font = new Font("Segoe UI", 15.75F);
-            panel6.Location = new Point(243, 15);
+            panel6.Location = new Point(278, 20);
+            panel6.Margin = new Padding(3, 4, 3, 4);
             panel6.Name = "panel6";
-            panel6.Size = new Size(40, 40);
+            panel6.Size = new Size(46, 53);
             panel6.TabIndex = 30;
             // 
             // lbl06
@@ -633,9 +578,9 @@
             lbl06.BackColor = Color.Transparent;
             lbl06.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl06.ForeColor = SystemColors.ButtonFace;
-            lbl06.Location = new Point(2, 5);
+            lbl06.Location = new Point(2, 7);
             lbl06.Name = "lbl06";
-            lbl06.Size = new Size(37, 30);
+            lbl06.Size = new Size(49, 37);
             lbl06.TabIndex = 25;
             lbl06.Text = "06";
             // 
@@ -643,9 +588,10 @@
             // 
             panel18.Controls.Add(lbl18);
             panel18.Font = new Font("Segoe UI", 15.75F);
-            panel18.Location = new Point(150, 117);
+            panel18.Location = new Point(171, 156);
+            panel18.Margin = new Padding(3, 4, 3, 4);
             panel18.Name = "panel18";
-            panel18.Size = new Size(40, 40);
+            panel18.Size = new Size(46, 53);
             panel18.TabIndex = 51;
             // 
             // lbl18
@@ -654,9 +600,9 @@
             lbl18.BackColor = Color.Transparent;
             lbl18.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl18.ForeColor = SystemColors.ButtonFace;
-            lbl18.Location = new Point(2, 5);
+            lbl18.Location = new Point(2, 7);
             lbl18.Name = "lbl18";
-            lbl18.Size = new Size(37, 30);
+            lbl18.Size = new Size(49, 37);
             lbl18.TabIndex = 25;
             lbl18.Text = "18";
             // 
@@ -664,9 +610,10 @@
             // 
             panel9.Controls.Add(lbl09);
             panel9.Font = new Font("Segoe UI", 15.75F);
-            panel9.Location = new Point(58, 66);
+            panel9.Location = new Point(66, 88);
+            panel9.Margin = new Padding(3, 4, 3, 4);
             panel9.Name = "panel9";
-            panel9.Size = new Size(40, 40);
+            panel9.Size = new Size(46, 53);
             panel9.TabIndex = 37;
             // 
             // lbl09
@@ -675,9 +622,9 @@
             lbl09.BackColor = Color.Transparent;
             lbl09.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl09.ForeColor = SystemColors.ButtonFace;
-            lbl09.Location = new Point(2, 5);
+            lbl09.Location = new Point(2, 7);
             lbl09.Name = "lbl09";
-            lbl09.Size = new Size(37, 30);
+            lbl09.Size = new Size(49, 37);
             lbl09.TabIndex = 25;
             lbl09.Text = "09";
             // 
@@ -685,9 +632,10 @@
             // 
             panel19.Controls.Add(lbl19);
             panel19.Font = new Font("Segoe UI", 15.75F);
-            panel19.Location = new Point(196, 117);
+            panel19.Location = new Point(224, 156);
+            panel19.Margin = new Padding(3, 4, 3, 4);
             panel19.Name = "panel19";
-            panel19.Size = new Size(40, 40);
+            panel19.Size = new Size(46, 53);
             panel19.TabIndex = 43;
             // 
             // lbl19
@@ -696,9 +644,9 @@
             lbl19.BackColor = Color.Transparent;
             lbl19.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl19.ForeColor = SystemColors.ButtonFace;
-            lbl19.Location = new Point(2, 5);
+            lbl19.Location = new Point(2, 7);
             lbl19.Name = "lbl19";
-            lbl19.Size = new Size(37, 30);
+            lbl19.Size = new Size(49, 37);
             lbl19.TabIndex = 25;
             lbl19.Text = "19";
             // 
@@ -706,9 +654,10 @@
             // 
             panel20.Controls.Add(lbl20);
             panel20.Font = new Font("Segoe UI", 15.75F);
-            panel20.Location = new Point(242, 117);
+            panel20.Location = new Point(277, 156);
+            panel20.Margin = new Padding(3, 4, 3, 4);
             panel20.Name = "panel20";
-            panel20.Size = new Size(40, 40);
+            panel20.Size = new Size(46, 53);
             panel20.TabIndex = 42;
             // 
             // lbl20
@@ -717,9 +666,9 @@
             lbl20.BackColor = Color.Transparent;
             lbl20.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl20.ForeColor = SystemColors.ButtonFace;
-            lbl20.Location = new Point(2, 5);
+            lbl20.Location = new Point(2, 7);
             lbl20.Name = "lbl20";
-            lbl20.Size = new Size(37, 30);
+            lbl20.Size = new Size(49, 37);
             lbl20.TabIndex = 25;
             lbl20.Text = "20";
             // 
@@ -727,9 +676,10 @@
             // 
             panel21.Controls.Add(lbl21);
             panel21.Font = new Font("Segoe UI", 15.75F);
-            panel21.Location = new Point(288, 117);
+            panel21.Location = new Point(329, 156);
+            panel21.Margin = new Padding(3, 4, 3, 4);
             panel21.Name = "panel21";
-            panel21.Size = new Size(40, 40);
+            panel21.Size = new Size(46, 53);
             panel21.TabIndex = 50;
             // 
             // lbl21
@@ -738,9 +688,9 @@
             lbl21.BackColor = Color.Transparent;
             lbl21.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl21.ForeColor = SystemColors.ButtonFace;
-            lbl21.Location = new Point(2, 5);
+            lbl21.Location = new Point(2, 7);
             lbl21.Name = "lbl21";
-            lbl21.Size = new Size(37, 30);
+            lbl21.Size = new Size(49, 37);
             lbl21.TabIndex = 25;
             lbl21.Text = "21";
             // 
@@ -748,9 +698,10 @@
             // 
             panel4.Controls.Add(lbl04);
             panel4.Font = new Font("Segoe UI", 15.75F);
-            panel4.Location = new Point(150, 15);
+            panel4.Location = new Point(171, 20);
+            panel4.Margin = new Padding(3, 4, 3, 4);
             panel4.Name = "panel4";
-            panel4.Size = new Size(40, 40);
+            panel4.Size = new Size(46, 53);
             panel4.TabIndex = 27;
             // 
             // lbl04
@@ -759,9 +710,9 @@
             lbl04.BackColor = Color.Transparent;
             lbl04.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl04.ForeColor = SystemColors.ButtonFace;
-            lbl04.Location = new Point(2, 5);
+            lbl04.Location = new Point(2, 7);
             lbl04.Name = "lbl04";
-            lbl04.Size = new Size(37, 30);
+            lbl04.Size = new Size(49, 37);
             lbl04.TabIndex = 25;
             lbl04.Text = "04";
             // 
@@ -769,9 +720,10 @@
             // 
             panel22.Controls.Add(lbl22);
             panel22.Font = new Font("Segoe UI", 15.75F);
-            panel22.Location = new Point(12, 168);
+            panel22.Location = new Point(14, 224);
+            panel22.Margin = new Padding(3, 4, 3, 4);
             panel22.Name = "panel22";
-            panel22.Size = new Size(40, 40);
+            panel22.Size = new Size(46, 53);
             panel22.TabIndex = 41;
             // 
             // lbl22
@@ -780,9 +732,9 @@
             lbl22.BackColor = Color.Transparent;
             lbl22.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl22.ForeColor = SystemColors.ButtonFace;
-            lbl22.Location = new Point(2, 5);
+            lbl22.Location = new Point(2, 7);
             lbl22.Name = "lbl22";
-            lbl22.Size = new Size(37, 30);
+            lbl22.Size = new Size(49, 37);
             lbl22.TabIndex = 25;
             lbl22.Text = "22";
             // 
@@ -790,9 +742,10 @@
             // 
             panel10.Controls.Add(lbl10);
             panel10.Font = new Font("Segoe UI", 15.75F);
-            panel10.Location = new Point(104, 66);
+            panel10.Location = new Point(119, 88);
+            panel10.Margin = new Padding(3, 4, 3, 4);
             panel10.Name = "panel10";
-            panel10.Size = new Size(40, 40);
+            panel10.Size = new Size(46, 53);
             panel10.TabIndex = 36;
             // 
             // lbl10
@@ -801,9 +754,9 @@
             lbl10.BackColor = Color.Transparent;
             lbl10.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl10.ForeColor = SystemColors.ButtonFace;
-            lbl10.Location = new Point(2, 5);
+            lbl10.Location = new Point(2, 7);
             lbl10.Name = "lbl10";
-            lbl10.Size = new Size(37, 30);
+            lbl10.Size = new Size(49, 37);
             lbl10.TabIndex = 25;
             lbl10.Text = "10";
             // 
@@ -811,9 +764,10 @@
             // 
             panel23.Controls.Add(lbl23);
             panel23.Font = new Font("Segoe UI", 15.75F);
-            panel23.Location = new Point(58, 168);
+            panel23.Location = new Point(66, 224);
+            panel23.Margin = new Padding(3, 4, 3, 4);
             panel23.Name = "panel23";
-            panel23.Size = new Size(40, 40);
+            panel23.Size = new Size(46, 53);
             panel23.TabIndex = 40;
             // 
             // lbl23
@@ -822,9 +776,9 @@
             lbl23.BackColor = Color.Transparent;
             lbl23.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl23.ForeColor = SystemColors.ButtonFace;
-            lbl23.Location = new Point(2, 5);
+            lbl23.Location = new Point(2, 7);
             lbl23.Name = "lbl23";
-            lbl23.Size = new Size(37, 30);
+            lbl23.Size = new Size(49, 37);
             lbl23.TabIndex = 25;
             lbl23.Text = "23";
             // 
@@ -832,9 +786,10 @@
             // 
             panel3.Controls.Add(lbl03);
             panel3.Font = new Font("Segoe UI", 15.75F);
-            panel3.Location = new Point(104, 15);
+            panel3.Location = new Point(119, 20);
+            panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(40, 40);
+            panel3.Size = new Size(46, 53);
             panel3.TabIndex = 26;
             // 
             // lbl03
@@ -843,9 +798,9 @@
             lbl03.BackColor = Color.Transparent;
             lbl03.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl03.ForeColor = SystemColors.ButtonFace;
-            lbl03.Location = new Point(2, 5);
+            lbl03.Location = new Point(2, 7);
             lbl03.Name = "lbl03";
-            lbl03.Size = new Size(37, 30);
+            lbl03.Size = new Size(49, 37);
             lbl03.TabIndex = 25;
             lbl03.Text = "03";
             // 
@@ -853,9 +808,10 @@
             // 
             panel24.Controls.Add(lbl24);
             panel24.Font = new Font("Segoe UI", 15.75F);
-            panel24.Location = new Point(104, 168);
+            panel24.Location = new Point(119, 224);
+            panel24.Margin = new Padding(3, 4, 3, 4);
             panel24.Name = "panel24";
-            panel24.Size = new Size(40, 40);
+            panel24.Size = new Size(46, 53);
             panel24.TabIndex = 49;
             // 
             // lbl24
@@ -864,9 +820,9 @@
             lbl24.BackColor = Color.Transparent;
             lbl24.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl24.ForeColor = SystemColors.ButtonFace;
-            lbl24.Location = new Point(2, 5);
+            lbl24.Location = new Point(2, 7);
             lbl24.Name = "lbl24";
-            lbl24.Size = new Size(37, 30);
+            lbl24.Size = new Size(49, 37);
             lbl24.TabIndex = 25;
             lbl24.Text = "24";
             // 
@@ -874,9 +830,10 @@
             // 
             panel2.Controls.Add(lbl02);
             panel2.Font = new Font("Segoe UI", 15.75F);
-            panel2.Location = new Point(58, 15);
+            panel2.Location = new Point(66, 20);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(40, 40);
+            panel2.Size = new Size(46, 53);
             panel2.TabIndex = 25;
             // 
             // lbl02
@@ -885,9 +842,9 @@
             lbl02.BackColor = Color.Transparent;
             lbl02.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl02.ForeColor = SystemColors.ButtonFace;
-            lbl02.Location = new Point(2, 5);
+            lbl02.Location = new Point(2, 7);
             lbl02.Name = "lbl02";
-            lbl02.Size = new Size(37, 30);
+            lbl02.Size = new Size(49, 37);
             lbl02.TabIndex = 25;
             lbl02.Text = "02";
             // 
@@ -895,9 +852,10 @@
             // 
             panel25.Controls.Add(lbl25);
             panel25.Font = new Font("Segoe UI", 15.75F);
-            panel25.Location = new Point(150, 168);
+            panel25.Location = new Point(171, 224);
+            panel25.Margin = new Padding(3, 4, 3, 4);
             panel25.Name = "panel25";
-            panel25.Size = new Size(40, 40);
+            panel25.Size = new Size(46, 53);
             panel25.TabIndex = 39;
             // 
             // lbl25
@@ -906,9 +864,9 @@
             lbl25.BackColor = Color.Transparent;
             lbl25.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl25.ForeColor = SystemColors.ButtonFace;
-            lbl25.Location = new Point(2, 5);
+            lbl25.Location = new Point(2, 7);
             lbl25.Name = "lbl25";
-            lbl25.Size = new Size(37, 30);
+            lbl25.Size = new Size(49, 37);
             lbl25.TabIndex = 25;
             lbl25.Text = "25";
             // 
@@ -916,9 +874,10 @@
             // 
             panel11.Controls.Add(lbl11);
             panel11.Font = new Font("Segoe UI", 15.75F);
-            panel11.Location = new Point(150, 66);
+            panel11.Location = new Point(171, 88);
+            panel11.Margin = new Padding(3, 4, 3, 4);
             panel11.Name = "panel11";
-            panel11.Size = new Size(40, 40);
+            panel11.Size = new Size(46, 53);
             panel11.TabIndex = 35;
             // 
             // lbl11
@@ -927,9 +886,9 @@
             lbl11.BackColor = Color.Transparent;
             lbl11.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl11.ForeColor = SystemColors.ButtonFace;
-            lbl11.Location = new Point(2, 5);
+            lbl11.Location = new Point(2, 7);
             lbl11.Name = "lbl11";
-            lbl11.Size = new Size(37, 30);
+            lbl11.Size = new Size(49, 37);
             lbl11.TabIndex = 25;
             lbl11.Text = "11";
             // 
@@ -937,9 +896,10 @@
             // 
             panel26.Controls.Add(lbl26);
             panel26.Font = new Font("Segoe UI", 15.75F);
-            panel26.Location = new Point(196, 168);
+            panel26.Location = new Point(224, 224);
+            panel26.Margin = new Padding(3, 4, 3, 4);
             panel26.Name = "panel26";
-            panel26.Size = new Size(40, 40);
+            panel26.Size = new Size(46, 53);
             panel26.TabIndex = 48;
             // 
             // lbl26
@@ -948,9 +908,9 @@
             lbl26.BackColor = Color.Transparent;
             lbl26.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl26.ForeColor = SystemColors.ButtonFace;
-            lbl26.Location = new Point(2, 5);
+            lbl26.Location = new Point(2, 7);
             lbl26.Name = "lbl26";
-            lbl26.Size = new Size(37, 30);
+            lbl26.Size = new Size(49, 37);
             lbl26.TabIndex = 25;
             lbl26.Text = "26";
             // 
@@ -958,9 +918,10 @@
             // 
             panel1.Controls.Add(lbl01);
             panel1.Font = new Font("Segoe UI", 15.75F);
-            panel1.Location = new Point(12, 15);
+            panel1.Location = new Point(14, 20);
+            panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(40, 40);
+            panel1.Size = new Size(46, 53);
             panel1.TabIndex = 24;
             // 
             // lbl01
@@ -969,9 +930,9 @@
             lbl01.BackColor = Color.Transparent;
             lbl01.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl01.ForeColor = SystemColors.ButtonFace;
-            lbl01.Location = new Point(2, 5);
+            lbl01.Location = new Point(2, 7);
             lbl01.Name = "lbl01";
-            lbl01.Size = new Size(37, 30);
+            lbl01.Size = new Size(49, 37);
             lbl01.TabIndex = 25;
             lbl01.Text = "01";
             // 
@@ -979,9 +940,10 @@
             // 
             panel27.Controls.Add(lbl27);
             panel27.Font = new Font("Segoe UI", 15.75F);
-            panel27.Location = new Point(242, 168);
+            panel27.Location = new Point(277, 224);
+            panel27.Margin = new Padding(3, 4, 3, 4);
             panel27.Name = "panel27";
-            panel27.Size = new Size(40, 40);
+            panel27.Size = new Size(46, 53);
             panel27.TabIndex = 47;
             // 
             // lbl27
@@ -990,9 +952,9 @@
             lbl27.BackColor = Color.Transparent;
             lbl27.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl27.ForeColor = SystemColors.ButtonFace;
-            lbl27.Location = new Point(2, 5);
+            lbl27.Location = new Point(2, 7);
             lbl27.Name = "lbl27";
-            lbl27.Size = new Size(37, 30);
+            lbl27.Size = new Size(49, 37);
             lbl27.TabIndex = 25;
             lbl27.Text = "27";
             // 
@@ -1000,9 +962,10 @@
             // 
             panel12.Controls.Add(lbl12);
             panel12.Font = new Font("Segoe UI", 15.75F);
-            panel12.Location = new Point(196, 66);
+            panel12.Location = new Point(224, 88);
+            panel12.Margin = new Padding(3, 4, 3, 4);
             panel12.Name = "panel12";
-            panel12.Size = new Size(40, 40);
+            panel12.Size = new Size(46, 53);
             panel12.TabIndex = 34;
             // 
             // lbl12
@@ -1011,9 +974,9 @@
             lbl12.BackColor = Color.Transparent;
             lbl12.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl12.ForeColor = SystemColors.ButtonFace;
-            lbl12.Location = new Point(2, 5);
+            lbl12.Location = new Point(2, 7);
             lbl12.Name = "lbl12";
-            lbl12.Size = new Size(37, 30);
+            lbl12.Size = new Size(49, 37);
             lbl12.TabIndex = 25;
             lbl12.Text = "12";
             // 
@@ -1021,9 +984,10 @@
             // 
             panel28.Controls.Add(lbl28);
             panel28.Font = new Font("Segoe UI", 15.75F);
-            panel28.Location = new Point(288, 168);
+            panel28.Location = new Point(329, 224);
+            panel28.Margin = new Padding(3, 4, 3, 4);
             panel28.Name = "panel28";
-            panel28.Size = new Size(40, 40);
+            panel28.Size = new Size(46, 53);
             panel28.TabIndex = 46;
             // 
             // lbl28
@@ -1032,9 +996,9 @@
             lbl28.BackColor = Color.Transparent;
             lbl28.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl28.ForeColor = SystemColors.ButtonFace;
-            lbl28.Location = new Point(2, 5);
+            lbl28.Location = new Point(2, 7);
             lbl28.Name = "lbl28";
-            lbl28.Size = new Size(37, 30);
+            lbl28.Size = new Size(49, 37);
             lbl28.TabIndex = 25;
             lbl28.Text = "28";
             // 
@@ -1042,9 +1006,10 @@
             // 
             panel13.Controls.Add(lbl13);
             panel13.Font = new Font("Segoe UI", 15.75F);
-            panel13.Location = new Point(242, 66);
+            panel13.Location = new Point(277, 88);
+            panel13.Margin = new Padding(3, 4, 3, 4);
             panel13.Name = "panel13";
-            panel13.Size = new Size(40, 40);
+            panel13.Size = new Size(46, 53);
             panel13.TabIndex = 33;
             // 
             // lbl13
@@ -1053,9 +1018,9 @@
             lbl13.BackColor = Color.Transparent;
             lbl13.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl13.ForeColor = SystemColors.ButtonFace;
-            lbl13.Location = new Point(2, 5);
+            lbl13.Location = new Point(2, 7);
             lbl13.Name = "lbl13";
-            lbl13.Size = new Size(37, 30);
+            lbl13.Size = new Size(49, 37);
             lbl13.TabIndex = 25;
             lbl13.Text = "13";
             // 
@@ -1063,9 +1028,10 @@
             // 
             panel14.Controls.Add(lbl14);
             panel14.Font = new Font("Segoe UI", 15.75F);
-            panel14.Location = new Point(288, 66);
+            panel14.Location = new Point(329, 88);
+            panel14.Margin = new Padding(3, 4, 3, 4);
             panel14.Name = "panel14";
-            panel14.Size = new Size(40, 40);
+            panel14.Size = new Size(46, 53);
             panel14.TabIndex = 32;
             // 
             // lbl14
@@ -1074,18 +1040,20 @@
             lbl14.BackColor = Color.Transparent;
             lbl14.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl14.ForeColor = SystemColors.ButtonFace;
-            lbl14.Location = new Point(2, 5);
+            lbl14.Location = new Point(2, 7);
             lbl14.Name = "lbl14";
-            lbl14.Size = new Size(37, 30);
+            lbl14.Size = new Size(49, 37);
             lbl14.TabIndex = 25;
             lbl14.Text = "14";
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(512, 371);
+            dataGridView1.Location = new Point(706, 492);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(339, 300);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(387, 400);
             dataGridView1.TabIndex = 24;
             // 
             // labeltotal
@@ -1094,9 +1062,9 @@
             labeltotal.BackColor = Color.FromArgb(118, 177, 206);
             labeltotal.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labeltotal.ForeColor = SystemColors.ButtonFace;
-            labeltotal.Location = new Point(512, 343);
+            labeltotal.Location = new Point(706, 454);
             labeltotal.Name = "labeltotal";
-            labeltotal.Size = new Size(198, 25);
+            labeltotal.Size = new Size(253, 32);
             labeltotal.TabIndex = 25;
             labeltotal.Text = "TOTAL DE RESERVAS:";
             // 
@@ -1106,9 +1074,9 @@
             lblTotal.BackColor = Color.FromArgb(118, 177, 206);
             lblTotal.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTotal.ForeColor = SystemColors.ControlLightLight;
-            lblTotal.Location = new Point(710, 343);
+            lblTotal.Location = new Point(932, 454);
             lblTotal.Name = "lblTotal";
-            lblTotal.Size = new Size(23, 25);
+            lblTotal.Size = new Size(28, 32);
             lblTotal.TabIndex = 26;
             lblTotal.Text = "0";
             // 
@@ -1119,130 +1087,12 @@
             btnRemove.FlatAppearance.BorderSize = 0;
             btnRemove.FlatStyle = FlatStyle.Flat;
             btnRemove.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnRemove.Location = new Point(826, 341);
+            btnRemove.Location = new Point(1065, 452);
+            btnRemove.Margin = new Padding(3, 4, 3, 4);
             btnRemove.Name = "btnRemove";
-            btnRemove.Size = new Size(25, 25);
+            btnRemove.Size = new Size(29, 33);
             btnRemove.TabIndex = 27;
             btnRemove.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(118, 177, 206);
-            label1.FlatStyle = FlatStyle.Flat;
-            label1.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(227, 84);
-            label1.Name = "label1";
-            label1.Size = new Size(135, 25);
-            label1.TabIndex = 72;
-            label1.Text = "N° Identidade";
-            // 
-            // datanasc
-            // 
-            datanasc.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            datanasc.Format = DateTimePickerFormat.Custom;
-            datanasc.Location = new Point(622, 46);
-            datanasc.MaxDate = new DateTime(2025, 12, 31, 0, 0, 0, 0);
-            datanasc.MinDate = new DateTime(1910, 1, 1, 0, 0, 0, 0);
-            datanasc.Name = "datanasc";
-            datanasc.Size = new Size(86, 25);
-            datanasc.TabIndex = 71;
-            datanasc.Value = new DateTime(2025, 7, 20, 0, 0, 0, 0);
-            // 
-            // labeldatanascimento
-            // 
-            labeldatanascimento.AutoSize = true;
-            labeldatanascimento.BackColor = Color.FromArgb(118, 177, 206);
-            labeldatanascimento.FlatStyle = FlatStyle.Flat;
-            labeldatanascimento.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labeldatanascimento.ForeColor = SystemColors.ButtonFace;
-            labeldatanascimento.Location = new Point(432, 46);
-            labeldatanascimento.Name = "labeldatanascimento";
-            labeldatanascimento.Size = new Size(190, 25);
-            labeldatanascimento.TabIndex = 70;
-            labeldatanascimento.Text = "Data de Nascimento";
-            // 
-            // txttelefone
-            // 
-            txttelefone.Cursor = Cursors.IBeam;
-            txttelefone.Enabled = false;
-            txttelefone.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txttelefone.Location = new Point(107, 84);
-            txttelefone.Mask = "(99) 00000-0000";
-            txttelefone.Name = "txttelefone";
-            txttelefone.Size = new Size(100, 25);
-            txttelefone.TabIndex = 69;
-            // 
-            // labeltelefone
-            // 
-            labeltelefone.AutoSize = true;
-            labeltelefone.BackColor = Color.FromArgb(118, 177, 206);
-            labeltelefone.FlatStyle = FlatStyle.Flat;
-            labeltelefone.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            labeltelefone.ForeColor = SystemColors.ButtonFace;
-            labeltelefone.Location = new Point(20, 84);
-            labeltelefone.Name = "labeltelefone";
-            labeltelefone.Size = new Size(87, 25);
-            labeltelefone.TabIndex = 23;
-            labeltelefone.Text = "Telefone";
-            // 
-            // gpbHospede
-            // 
-            gpbHospede.BackColor = SystemColors.ButtonFace;
-            gpbHospede.Controls.Add(label2);
-            gpbHospede.Controls.Add(btnsalvarhospede);
-            gpbHospede.Controls.Add(txtcpf);
-            gpbHospede.Controls.Add(label1);
-            gpbHospede.Controls.Add(labelnomehospede);
-            gpbHospede.Controls.Add(datanasc);
-            gpbHospede.Controls.Add(tbxhospede);
-            gpbHospede.Controls.Add(labeldatanascimento);
-            gpbHospede.Controls.Add(labeltelefone);
-            gpbHospede.Controls.Add(txttelefone);
-            gpbHospede.Font = new Font("Nirmala UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            gpbHospede.ForeColor = Color.FromArgb(118, 177, 206);
-            gpbHospede.Location = new Point(12, 101);
-            gpbHospede.Name = "gpbHospede";
-            gpbHospede.Size = new Size(976, 194);
-            gpbHospede.TabIndex = 29;
-            gpbHospede.TabStop = false;
-            gpbHospede.Text = "Informações do Hóspede";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(118, 177, 206);
-            label2.FlatStyle = FlatStyle.Flat;
-            label2.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.ButtonFace;
-            label2.Location = new Point(20, 200);
-            label2.Name = "label2";
-            label2.Size = new Size(0, 25);
-            label2.TabIndex = 74;
-            // 
-            // btnsalvarhospede
-            // 
-            btnsalvarhospede.BackColor = Color.FromArgb(4, 99, 125);
-            btnsalvarhospede.FlatAppearance.BorderSize = 0;
-            btnsalvarhospede.FlatStyle = FlatStyle.Flat;
-            btnsalvarhospede.Font = new Font("Nirmala UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnsalvarhospede.ForeColor = SystemColors.ButtonFace;
-            btnsalvarhospede.Location = new Point(828, 154);
-            btnsalvarhospede.Name = "btnsalvarhospede";
-            btnsalvarhospede.Size = new Size(133, 25);
-            btnsalvarhospede.TabIndex = 73;
-            btnsalvarhospede.Text = "Salvar informações";
-            btnsalvarhospede.UseVisualStyleBackColor = false;
-            // 
-            // txtcpf
-            // 
-            txtcpf.Font = new Font("Nirmala UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtcpf.Location = new Point(362, 84);
-            txtcpf.Mask = "000.000.000-00";
-            txtcpf.Name = "txtcpf";
-            txtcpf.Size = new Size(100, 25);
-            txtcpf.TabIndex = 30;
             // 
             // panelreservas
             // 
@@ -1260,25 +1110,26 @@
             panelreservas.Controls.Add(labeldias);
             panelreservas.Controls.Add(labelvalordiaria);
             panelreservas.Controls.Add(tbxdias);
-            panelreservas.Location = new Point(12, 314);
+            panelreservas.Location = new Point(12, 146);
+            panelreservas.Margin = new Padding(3, 4, 3, 4);
             panelreservas.Name = "panelreservas";
-            panelreservas.Size = new Size(480, 430);
+            panelreservas.Size = new Size(583, 573);
             panelreservas.TabIndex = 30;
             // 
             // FrmReservas
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Window;
-            ClientSize = new Size(1000, 800);
+            ClientSize = new Size(1143, 1014);
             Controls.Add(panelreservas);
-            Controls.Add(gpbHospede);
             Controls.Add(btnRemove);
             Controls.Add(lblTotal);
             Controls.Add(labeltotal);
             Controls.Add(dataGridView1);
             Controls.Add(Paneltop);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "FrmReservas";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmReservas";
@@ -1349,8 +1200,6 @@
             panel14.ResumeLayout(false);
             panel14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            gpbHospede.ResumeLayout(false);
-            gpbHospede.PerformLayout();
             panelreservas.ResumeLayout(false);
             panelreservas.PerformLayout();
             ResumeLayout(false);
@@ -1372,8 +1221,6 @@
         private TextBox tbxvalordiaria;
         private TextBox tbxdias;
         private Label labeldias;
-        private TextBox tbxhospede;
-        private Label labelnomehospede;
         private Label labelfuncionario;
         private ComboBox cbxfuncionario;
         private Panel pnlprincipal;
@@ -1439,21 +1286,10 @@
         private Label lbl30;
         private Panel panel31;
         private Label lbl31;
-        private Button btncriarreserva;
         private DataGridView dataGridView1;
         private Label labeltotal;
         private Label lblTotal;
         private Button btnRemove;
-        private Label labeltelefone;
-        private MaskedTextBox txttelefone;
-        private DateTimePicker datanasc;
-        private Label labeldatanascimento;
-        private Label label1;
-        private GroupBox gpbHospede;
-        private MaskedTextBox txtcpf;
-        private Button btnsalvarhospede;
         private Panel panelreservas;
-        private Button btncadastrarhospede;
-        private Label label2;
     }
 }

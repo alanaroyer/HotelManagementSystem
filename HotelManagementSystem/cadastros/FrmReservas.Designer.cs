@@ -1049,7 +1049,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(706, 492);
+            dataGridView1.Location = new Point(687, 260);
             dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
@@ -1062,7 +1062,7 @@
             labeltotal.BackColor = Color.FromArgb(118, 177, 206);
             labeltotal.Font = new Font("Nirmala UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             labeltotal.ForeColor = SystemColors.ButtonFace;
-            labeltotal.Location = new Point(706, 454);
+            labeltotal.Location = new Point(687, 222);
             labeltotal.Name = "labeltotal";
             labeltotal.Size = new Size(253, 32);
             labeltotal.TabIndex = 25;
@@ -1074,7 +1074,7 @@
             lblTotal.BackColor = Color.FromArgb(118, 177, 206);
             lblTotal.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTotal.ForeColor = SystemColors.ControlLightLight;
-            lblTotal.Location = new Point(932, 454);
+            lblTotal.Location = new Point(913, 222);
             lblTotal.Name = "lblTotal";
             lblTotal.Size = new Size(28, 32);
             lblTotal.TabIndex = 26;
@@ -1087,7 +1087,7 @@
             btnRemove.FlatAppearance.BorderSize = 0;
             btnRemove.FlatStyle = FlatStyle.Flat;
             btnRemove.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnRemove.Location = new Point(1065, 452);
+            btnRemove.Location = new Point(1046, 220);
             btnRemove.Margin = new Padding(3, 4, 3, 4);
             btnRemove.Name = "btnRemove";
             btnRemove.Size = new Size(29, 33);
